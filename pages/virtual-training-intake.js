@@ -3,7 +3,7 @@ import Layout, { siteTitle } from '../components/layout'
 import VirtualTrainingForm from '../components/virtualTrainingForm'
 
 import utilStyles from '../styles/utils.module.css'
-import formStyles from '../styles/forms.module.css'
+import formStyles from '../styles/intake.module.css'
 export default function Home () {
   return (
     <Layout home>
