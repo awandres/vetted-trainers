@@ -6,7 +6,7 @@ import utilStyles from '../styles/utils.module.css'
 import servicesStyles from '../styles/private.module.css'
 import formStyles from '../styles/forms.module.css'
 
-import PrivateGymTrainingForm from '../components/PrivateGymTrainingForm'
+import PrivateGymTrainingForm from '../components/privateGymTrainingForm'
 
 export default function Home () {
   return (
@@ -43,7 +43,7 @@ export default function Home () {
             </div>
             </a>
             </Link>
-            
+
           </div>
         </section>
 

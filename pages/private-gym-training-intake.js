@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import PrivateGymTrainingForm from '../components/PrivateGymTrainingForm'
+import PrivateGymTrainingForm from '../components/privateGymTrainingForm'
 
 import utilStyles from '../styles/utils.module.css'
 import formStyles from '../styles/forms.module.css'
