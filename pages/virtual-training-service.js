@@ -6,6 +6,7 @@ import utilStyles from '../styles/utils.module.css'
 import servicesStyles from '../styles/virtual.module.css'
 import formStyles from '../styles/forms.module.css'
 import VirtualTrainingForm from '../components/virtualTrainingForm'
+import Footer from '../components/footer'
 
 
 export default function Home () {
@@ -86,27 +87,7 @@ export default function Home () {
 
 
 
-        <section className={servicesStyles.footer}>
-
-          <div className={servicesStyles.logo}>
-            <img src='/images/vetted-logo.png' />
-          </div>
-
-          <div className={servicesStyles.footerContact}>
-
-            <h3>5712 Industry Lane Unit E, Frederick MD, 21703</h3>
-            <h3>vettedtrainers@gmail.com</h3>
-            <h3>(240)-409-2975</h3>
-
-            <div className={servicesStyles.socialMedia}>
-              <img src='/images/yt-red.png' />
-              <img src='/images/fb-icon.png' />
-              <img src='/images/ig-icon.png' />
-
-            </div>
-          </div>
-
-        </section>
+<Footer />
 
       </body>
     </Layout>

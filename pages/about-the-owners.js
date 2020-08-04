@@ -4,6 +4,8 @@ import JoinOurTeamForm from '../components/joinOurTeamForm'
 
 import utilStyles from '../styles/utils.module.css'
 import ownerStyles from '../styles/owners.module.css'
+import Footer from '../components/footer'
+
 export default function Home () {
   return (
     <Layout home>
@@ -34,27 +36,7 @@ export default function Home () {
 
 
 
-        <section className={ownerStyles.footer}>
-
-          <div className={ownerStyles.logo}>
-            <img src='/images/vetted-logo.png' />
-          </div>
-
-          <div className={ownerStyles.footerContact}>
-
-            <h3>5712 Industry Lane Unit E, Frederick MD, 21703</h3>
-            <h3>vettedtrainers@gmail.com</h3>
-            <h3>(240)-409-2975</h3>
-
-            <div className={ownerStyles.socialMedia}>
-              <img src='/images/yt-red.png' />
-              <img src='/images/fb-icon.png' />
-              <img src='/images/ig-icon.png' />
-
-            </div>
-          </div>
-
-        </section>
+<Footer />
 
       </body>
     </Layout>

@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 const name = 'Vetted Trainers'
 export const siteTitle = 'Vetted Trainers'
+import Footer from './footer'
 
 export default function Layout({ children, home }) {
   return (
@@ -96,7 +97,8 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main>{children}
+      </main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
@@ -104,6 +106,9 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+
     </div>
+
+
   )
 }
