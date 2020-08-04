@@ -19,7 +19,7 @@ export default function Home() {
         Are you ready to <br />MOVE BETTER, <br />FEEL BETTER, <br />and BE BETTER?
         </h1>
         <p className={homeStyles.subHead}>
-        Vetted Trainers are dedicated to the success of our clients and will provide syou with the knowledge and guidance to reach your goals!
+        Vetted Trainers are dedicated to the success of our clients and will provide you with the knowledge and guidance to reach your goals!
 
 
         </p>
