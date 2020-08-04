@@ -7,9 +7,15 @@ export default function Footer () {
 return (
 <section className={formStyles.footer}>
 
+  <Link href="/">
+
+  <a className={utilStyles.colorInherit}>
   <div className={formStyles.logo}>
     <img src='/images/vetted-logo.png' />
   </div>
+  </a>
+
+  </Link>
 
   <div className={formStyles.footerContact}>
 
