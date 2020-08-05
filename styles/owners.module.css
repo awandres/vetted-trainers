@@ -554,6 +554,10 @@ margin-top:0px;
     /* margin-bottom:400px; */
   }
 
+  .bioText {
+    padding-top:100px;
+  }
+
   .socialMedia img {
     width:40px;
     margin:8px;

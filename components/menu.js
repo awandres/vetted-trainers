@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Link from 'next/link'
 import MenuButton from './menuButton'
+import utilStyles from '../styles/utils.module.css'
 
 class Menu extends React.Component {
   constructor(props){
@@ -111,6 +112,7 @@ class Menu extends React.Component {
 
                   <Link href='/'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
             >
+            
             <h2 style={styles.headerItem}>Home</h2>
             </div></Link>
 
@@ -136,6 +138,12 @@ class Menu extends React.Component {
   </div></Link>
 
                   <div style={styles.line} />
+
+                  <Link href='/general-training-intake'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
+  >
+  <h2 style={styles.headerItem}><span className={utilStyles.blue}>Request Consultation</span></h2>
+  </div></Link>
+  <div style={styles.line} />
 
   </div>
             </div>:null
