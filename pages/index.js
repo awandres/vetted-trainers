@@ -3,9 +3,15 @@ import Layout, { siteTitle } from '../components/layout'
 import HubspotForm from '../components/hubspotForm'
 import Link from 'next/link'
 import Footer from '../components/footer'
+import Slider from '../components/slider'
 
 import utilStyles from '../styles/utils.module.css'
 import homeStyles from '../styles/home.module.css'
+
+
+
+
+
 export default function Home() {
   return (
     <Layout home>
@@ -138,18 +144,7 @@ export default function Home() {
 
     </section>
 
-
-    <section className={homeStyles.testimonialsContainer}>
-    <div className={homeStyles.testimonials}>
-    <h1 className={homeStyles.contentHeader}>Customer Reviews</h1>
-
-    <hr className={homeStyles.divider} />
-
-    <h3>Cathy Watkins</h3>
-    <p>"Vetted Trainers knowledge of the human body is beyond amazing. They helped me complete a goal of competing in my first-ever U.S. Strong Woman competition. Without him I would have never challenged myself and succeeded!"</p>
-    <img src="/images/cathy-testimonial.jpg" className={homeStyles.testimonialPic} />
-    </div>
-    </section>
+    <Slider />
 
 
 

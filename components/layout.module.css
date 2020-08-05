@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
   .header {
     display:none!important
   }
@@ -51,4 +51,4 @@
   .header {
     display:none!important
   }
-}
+} */

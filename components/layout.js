@@ -2,16 +2,24 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import MediaQuery from 'react-responsive'
+
 const name = 'Vetted Trainers'
 export const siteTitle = 'Vetted Trainers'
 import Footer from './footer'
+import Slider from './slider'
+import MobileMenu from './mobileMenu'
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
+
         <link rel="icon" href="/images/vt-favicon.png" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
         <meta
           name="description"
           content="Vetted Trainers is a group of personal trainers that give you dedicated workout and training programs to help you achieve your fitness goals."
@@ -22,8 +30,16 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
       </Head>
       <header className={styles.header}>
+
+      <MobileMenu />
+
+
+<MediaQuery minDeviceWidth={768}>
         {home ? (
           <>
             <Link href="/" ><img
@@ -96,6 +112,8 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
+
+        </MediaQuery>
       </header>
       <main>{children}
       </main>
