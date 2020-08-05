@@ -484,7 +484,7 @@ margin-top:0px;
 
   .heroBanner {
     background-image: url('/images/guy-working-out.jpg');
-    height:500px;
+    height:auto;
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -500,11 +500,12 @@ margin-top:0px;
     height:auto;
     background-color:rgba(20,20,20,.2);
     border-radius:10px;
+    padding-top:100px;
 
   }
 
   .mainHeader {
-    font-size:5rem;
+    font-size:4rem;
     line-height: normal;
   }
 

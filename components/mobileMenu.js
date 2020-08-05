@@ -27,14 +27,15 @@ class MobileMenu extends React.Component {
         container: {
           position: 'absolute',
           top: 0,
-          height: '130px',
+          height: '100px',
           right: 0,
           zIndex: '99',
           opacity: 0.9,
           display: 'flex',
           alignItems: 'end',
+          marginBottom:'30px',
           justifyContent: 'flex-end',
-          background: 'rgba(247,202,153, .4)',
+          background: 'rgba(0,0,0, .4)',
           width: '100%',
           color: 'white',
           fontFamily: 'Lobster',
@@ -42,7 +43,7 @@ class MobileMenu extends React.Component {
         },
         menuItem: {
           fontFamily: `'Open Sans', sans-serif`,
-          fontSize: '1.4rem',
+          fontSize: '1.2rem',
           padding: '1rem 0',
           margin: '0 5%',
           cursor: 'pointer',
@@ -53,6 +54,11 @@ class MobileMenu extends React.Component {
           animation: '0.5s slideIn forwards',
           animationDelay: this.props.delay
 
+        },
+        headerItem:{
+          fontSize:'20px',
+          color:'white',
+          zIndex:9999
         },
         menuContainer: {
           opacity: 0,
@@ -111,28 +117,28 @@ class MobileMenu extends React.Component {
 
                 <Link href='/'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
           >
-          Home
+          <h2 style={styles.headerItem}>Home</h2>
           </div></Link>
 
                 <div style={styles.line} />
 
                 <Link href='/services'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
     >
-    About
+    <h2 style={styles.headerItem}>Services</h2>
     </div></Link>
 
                 <div style={styles.line} />
 
                 <Link href='/join-our-team'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
 >
-Services
+<h2 style={styles.headerItem}>Join Our Team</h2>
 </div></Link>
 
                 <div style={styles.line} />
 
                 <Link href='/about-the-owners'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
 >
-FAQs
+<h2 style={styles.headerItem}>About the Owners</h2>
 </div></Link>
 
                 <div style={styles.line} />

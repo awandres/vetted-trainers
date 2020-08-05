@@ -595,7 +595,7 @@ margin-left:000px;
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:0 -50px!important;
+    background-position:center;
     display:flex;
     justify-content: center;
     flex-direction: column;
@@ -604,6 +604,7 @@ margin-left:000px;
 
   .heroBannerContent {
     width: auto;
+    margin-top:100px;
   }
 
   .mainHeader {
