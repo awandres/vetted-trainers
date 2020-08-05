@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import MediaQuery from 'react-responsive'
 import React from 'react'
-import Menu from './Menu'
-import MenuItem from './MenuItem'
-import MenuButton from './MenuButton'
+import Menu from './menu'
+import MenuItem from './menuItem'
+import MenuButton from './menuButton'
 
 class MobileMenu extends React.Component {
   constructor (props) {
