@@ -21,8 +21,6 @@ export default function Home () {
 
           <h2>Fill out the form below and a trainer will reach out to you shortly to follow up with information about our <span className={utilStyles.blue}>Virtual Training Program.</span></h2>
 
-          <p></p>
-
         </div>
 
 <div className={formStyles.formContainer}>
