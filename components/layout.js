@@ -42,6 +42,7 @@ export default function Layout({ children, home }) {
 <MediaQuery minDeviceWidth={768}>
         {home ? (
           <>
+          
             <Link href="/" ><img
               src="/images/vetted-logo.png"
               className={`${styles.headerHomeImage} `}
@@ -116,6 +117,7 @@ export default function Layout({ children, home }) {
         </MediaQuery>
       </header>
       <main>{children}
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7981288.js"></script>
       </main>
       {!home && (
         <div className={styles.backToHome}>

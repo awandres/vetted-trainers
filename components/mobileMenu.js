@@ -86,7 +86,7 @@ class MobileMenu extends React.Component {
         },
         logo: {
           margin: '0 auto',
-          width: '70px',
+          width: '130px',
           padding: '20px',
           position: 'absolute',
           top: 0,
@@ -106,6 +106,9 @@ class MobileMenu extends React.Component {
     return (
 
         <MediaQuery maxDeviceWidth={768}>
+
+<img style={styles.logo} src='/images/vetted-logo.png' />
+
           <div style={styles.container}>
 
             <MenuButton open={this.state.menuOpen} onClick={() => this.handleMenuClick()} color='white' />
