@@ -12,7 +12,7 @@ import MobileMenu from './mobileMenu'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <html lang="en" className={styles.container}>
       <Head>
 
         <link rel="icon" href="/images/vt-favicon.png" />
@@ -33,8 +33,9 @@ export default function Layout({ children, home }) {
 
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0095/9894.js" async="async"></script>
-        
+
       </Head>
+
       <header className={styles.header}>
 
       <MobileMenu />
@@ -128,7 +129,7 @@ export default function Layout({ children, home }) {
         </div>
       )}
 
-    </div>
+    </html>
 
 
   )
