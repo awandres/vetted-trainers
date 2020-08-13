@@ -24,7 +24,7 @@ export default function Home() {
       <section className={homeStyles.heroBanner}>
       <div className={homeStyles.heroBannerContent}>
         <h1 className={homeStyles.mainHeader}>
-        Are you ready to <br />MOVE Better, <br />FEEL Better, <br />and BE Better?
+        Are you ready to <br />MOVE better, <br />FEEL better, <br />and BE better?
         </h1>
         <p className={homeStyles.subHead}>
         Vetted Trainers are dedicated to the success of our clients and will provide you with the knowledge and guidance to reach your goals!

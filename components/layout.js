@@ -32,7 +32,8 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
 
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+        <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0095/9894.js" async="async"></script>
+        
       </Head>
       <header className={styles.header}>
 
@@ -42,7 +43,7 @@ export default function Layout({ children, home }) {
 <MediaQuery minDeviceWidth={768}>
         {home ? (
           <>
-          
+
             <Link href="/" ><img
               src="/images/vetted-logo.png"
               className={`${styles.headerHomeImage} `}
@@ -117,7 +118,7 @@ export default function Layout({ children, home }) {
         </MediaQuery>
       </header>
       <main>{children}
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7981288.js"></script>
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7981288.js"></script>
       </main>
       {!home && (
         <div className={styles.backToHome}>
