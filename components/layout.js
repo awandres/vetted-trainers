@@ -17,7 +17,6 @@ export default function Layout({ children, home }) {
       <script
         dangerouslySetInnerHTML={{
           __html: `
-          <!-- Global site tag (gtag.js) - Google Analytics -->
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144123323-1"></script>
           <script>
             window.dataLayer = window.dataLayer || [];
@@ -136,14 +135,7 @@ export default function Layout({ children, home }) {
 
 
       <main>{children}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVFMXQT"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-            `,
-        }}
-      />
+
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7981288.js"></script>
       </main>
       {!home && (
