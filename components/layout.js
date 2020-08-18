@@ -18,7 +18,19 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/images/vt-favicon.png" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MVFMXQT');</script>
+            <!-- End Google Tag Manager -->
+              `,
+          }}
+        />
 
         <meta
           name="description"
@@ -33,7 +45,20 @@ export default function Layout({ children, home }) {
 
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0095/9894.js" async="async"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170273689-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
+gtag('config', 'UA-170273689-1');
+</script>
+              `,
+          }}
+        />
       </Head>
 
       <header className={styles.header}>
@@ -118,7 +143,18 @@ export default function Layout({ children, home }) {
 
         </MediaQuery>
       </header>
+
+
+
       <main>{children}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVFMXQT"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            `,
+        }}
+      />
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7981288.js"></script>
       </main>
       {!home && (
