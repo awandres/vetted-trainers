@@ -17,6 +17,7 @@ export default function Layout({ children, home }) {
       <script
         dangerouslySetInnerHTML={{
           __html: `
+          <!-- Global site tag (gtag.js) - Google Analytics -->
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144123323-1"></script>
           <script>
             window.dataLayer = window.dataLayer || [];
@@ -25,26 +26,13 @@ export default function Layout({ children, home }) {
 
             gtag('config', 'UA-144123323-1');
           </script>
-
             `,
         }}
       />
         <link rel="icon" href="/images/vt-favicon.png" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            <!-- Google Tag Manager -->
-            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-MVFMXQT');</script>
-            <!-- End Google Tag Manager -->
-              `,
-          }}
-        />
+
 
         <meta
           name="description"
