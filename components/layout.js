@@ -14,7 +14,21 @@ export default function Layout({ children, home }) {
   return (
     <html lang="en" className={styles.container}>
       <Head>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144123323-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
+            gtag('config', 'UA-144123323-1');
+          </script>
+
+            `,
+        }}
+      />
         <link rel="icon" href="/images/vt-favicon.png" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -45,20 +59,7 @@ export default function Layout({ children, home }) {
 
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0095/9894.js" async="async"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170273689-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
 
-gtag('config', 'UA-170273689-1');
-</script>
-              `,
-          }}
-        />
       </Head>
 
       <header className={styles.header}>
