@@ -7,6 +7,7 @@ class VirtualTrainingForm extends React.Component {
     document.body.appendChild(script);
 
     script.addEventListener('load', () => {
+
     	if(window.hbspt) {
       	window.hbspt.forms.create({
         	portalId: '7981288',

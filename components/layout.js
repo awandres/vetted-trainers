@@ -39,10 +39,15 @@ export default function Layout({ children, home }) {
         />
         <meta
           property="og:image"
-          content={`https://ibb.co/2F4Dtpp`}
+          content="https://ibb.co/2F4Dtpp"
         />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="og:title" content="Vetted Trainers" />
+        <meta name="og:description" content="Vetted Trainers is a group of experienced personal trainers that create dedicated workout and training programs to help you achieve your fitness goals." />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Vetted Trainers" />
+        <meta name="twitter:description" content="Personal Training programs tailored to your fitness needs" />
+        <meta name="twitter:image" content="https://ibb.co/2F4Dtpp" />
 
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0095/9894.js" async="async"></script>
