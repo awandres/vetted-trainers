@@ -35,29 +35,7 @@ export default function Home() {
 
     </section>
 
-//     <section className={homeStyles.contentBlock}>
-//       <div className={homeStyles.contentContainer}>
-//         <h1 className={homeStyles.contentHeader}>
-//           Vetted Trainers<span> Virtual Training</span>
-//           </h1>
-//
-//       <hr className={homeStyles.divider} />
-//
-//       <p className={` ${homeStyles.content} ${homeStyles.centered} `}>We have deployed our new virtual training program so you can have a personalized training program right from your own home!</p>
-//       <div className={homeStyles.iframeContainer}>
-// <iframe width="100%" height="315" src="https://www.youtube.com/embed/hbzNT-N01c8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-// </div>
-//
-//     <Link href="/virtual-training-intake">
-//       <a className={utilStyles.colorInherit}>
-//       <div className={homeStyles.button}>
-//         Go Virtual
-//       </div></a>
-//     </Link>
-//
-//
-//       </div>
-//     </section>
+
 
     <section className={homeStyles.about}>
 
