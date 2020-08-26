@@ -149,28 +149,21 @@ export default function Layout({ children, home }) {
       <main>{children}
 
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7981288.js"></script>
-
-
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html:
-
-          `
-          "@context": "http://schema.org",
-          "@type": "Organization",
-          "name": "Vetted Trainers",
-          "url": "https://vettedtrainers.com",
-          "address": "5712 Industry Ln unit e, Frederick, MD 21703",
-          "sameAs": [
-            "https://www.facebook.com/Vettedtrainers/",
-            "https://twitter.com/TrainersVetted",
-            "https://www.instagram.com/vettedtrainers/",
-            "https://www.youtube.com/channel/UCMTekJJglOmXvy3AZGjbQYw"
-          ]
-          `,
-
-        }}
-        />
-
-
+        <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Vetted Trainers",
+    "url": "https://vettedtrainers.com",
+    "address": "5712 Industry Ln unit e, Frederick, MD 21703",
+    "sameAs": [
+      "https://www.facebook.com/Vettedtrainers/",
+      "https://twitter.com/TrainersVetted",
+      "https://www.instagram.com/vettedtrainers/",
+      "https://www.youtube.com/channel/UCMTekJJglOmXvy3AZGjbQYw"
+    ]
+  }
+</script>
       </main>
       {!home && (
         <div className={styles.backToHome}>
