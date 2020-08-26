@@ -31,7 +31,7 @@ Services</h1>
             <Link href="/virtual-training-service">
             <a className={utilStyles.colorInherit}>
               <div className={servicesStyles.singleService}>
-                <img src='/images/VT-33.jpg' />
+                <img src='/images/VT-33.jpg' alt="Woman excercising virtually near a pool using a laptop"/>
                 <h2>Virtual Training</h2>
                 <hr className={servicesStyles.divider} />
 
@@ -42,7 +42,7 @@ Services</h1>
               <Link href="/private-gym-training-service">
               <a className={utilStyles.colorInherit}>
               <div className={servicesStyles.singleService}>
-                <img src='/images/IMG_5923.jpg' />
+                <img src='/images/IMG_5923.jpg' alt="Woman boxing with a trainer for excercise"/>
                 <h2>Private Gym Personal Training</h2>
                 <hr className={servicesStyles.divider} />
 
@@ -54,7 +54,7 @@ Services</h1>
               <Link href="/in-home-training-service">
               <a className={utilStyles.colorInherit}>
               <div className={servicesStyles.singleService}>
-                <img src='/images/VT-36.jpg' />
+                <img src='/images/VT-36.jpg' alt="Personal trainer helping an elderly woman stretch"/>
                 <h2>In Home Personal Training</h2>
                 <hr className={servicesStyles.divider} />
 

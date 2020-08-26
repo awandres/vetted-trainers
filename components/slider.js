@@ -79,11 +79,11 @@ prevTestimonial() {
       <h3>{testimonials[this.state.activeIndex].name}</h3>
       <p>"{testimonials[this.state.activeIndex].review}"</p>
       <div className={homeStyles.arrowDiv}>
-        <img className={homeStyles.arrow} onClick={this.prevTestimonial} src="/images/back.png" />
-        <img className={homeStyles.arrow} onClick={this.nextTestimonial} src="/images/next.png" />
+        <img className={homeStyles.arrow} onClick={this.prevTestimonial} src="/images/back.png" alt="left facing carrot icon" />
+        <img className={homeStyles.arrow} onClick={this.nextTestimonial} src="/images/next.png" alt="right facing carrot icon"/>
        </div>
 
-      <img src={testimonials[this.state.activeIndex].img} className={homeStyles.testimonialPic} />
+      <img src={testimonials[this.state.activeIndex].img} className={homeStyles.testimonialPic} alt="Woman doing ab workouts with a medicine ball and weights"/>
 
       </div>
       </div>

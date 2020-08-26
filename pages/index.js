@@ -47,7 +47,7 @@ export default function Home() {
       <p className={` ${homeStyles.content} ${homeStyles.centered} `}>Vetted Trainers is a team of top notch trainers who combine the best of strength training, mobility, and tissue work to optimize your human movement. We also use various modalities (private gym sessions, in home sessions, and virtual sessions) to meet the needs of our clients so you can become stronger and healthier no matter where you are!</p>
 
 
-        <img src="/images/joel_nicole_squats.jpg" />
+        <img src="/images/joel_nicole_squats.jpg" alt="Woman doing barbell squats in front of a mirror with a personal trainer"/>
 
     </section>
 
@@ -76,7 +76,7 @@ export default function Home() {
 
 <div className={homeStyles.services}>
       <div className={homeStyles.singleService}>
-        <img src="/images/IMG_5923.jpg" />
+        <img src="/images/IMG_5923.jpg" alt="Woman boxing and working out with a trainer at her personal gym"/>
         <h2>Private Gym Personal Training</h2>
         <hr className={homeStyles.divider} />
 
@@ -92,7 +92,7 @@ export default function Home() {
       </div>
 
       <div className={homeStyles.singleService}>
-      <img src="/images/VT-36.jpg" />
+      <img src="/images/VT-36.jpg" alt="Personal trainer helping older woman stretch in-home"/>
       <h2>In Home Personal Training</h2>
       <hr className={homeStyles.divider} />
 
@@ -106,7 +106,7 @@ export default function Home() {
       </div>
 
       <div className={homeStyles.singleService}>
-      <img src="/images/VT-33.jpg" />
+      <img src="/images/VT-33.jpg" alt="Woman excercising virtually with her laptop near a pool" />
       <h2>Virtual Training</h2>
       <hr className={homeStyles.divider} />
 

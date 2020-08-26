@@ -107,7 +107,7 @@ class MobileMenu extends React.Component {
 
         <MediaQuery maxDeviceWidth={768}>
 
-<Link href='/'><img style={styles.logo} src='/images/vetted-logo.png' /></Link>
+<Link href='/'><img style={styles.logo} src='/images/vetted-logo.png' alt="mobile icon logo for Vetted Trainers" /></Link>
 
           <div style={styles.container}>
 
