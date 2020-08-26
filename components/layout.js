@@ -39,9 +39,11 @@ export default function Layout({ children, home }) {
         />
         <meta
           property="og:image"
-          content="https://ibb.co/2F4Dtpp"
+          content="https://vettedtrainers.com/images/vt-logo.jpeg"
         />
         <meta property="og:title" content="Vetted Trainers" />
+        <meta property="og:type" content="website" />
+
         <meta property="og:description" content="Vetted Trainers is a group of experienced personal trainers that create dedicated workout and training programs to help you achieve your fitness goals." />
         <meta property="og:url" content="https://vettedtrainers.com" />
 
