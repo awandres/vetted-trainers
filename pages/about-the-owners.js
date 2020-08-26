@@ -10,7 +10,7 @@ export default function Home () {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>About The Owners - Vetted Trainers</title>
         <link rel="canonical" href="https://vettedtrainers.com/about-the-owners" />
       </Head>
       <body className={ownerStyles.body}>

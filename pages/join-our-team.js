@@ -9,7 +9,7 @@ export default function Home () {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Join Our Team - Vetted Trainers</title>
         <link rel="canonical" href="https://vettedtrainers.com/join-our-team" />
 
       </Head>

@@ -13,7 +13,7 @@ export default function Home () {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Private Gym Training - Vetted Trainers</title>
         <link rel="canonical" href="https://vettedtrainers.com/private-gym-training-service" />
 
       </Head>
