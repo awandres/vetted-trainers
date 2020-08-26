@@ -54,8 +54,8 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Vetted Trainers" />
         <meta name="twitter:description" content="Personal Training programs tailored to your fitness needs" />
-        <meta name="twitter:image" content="https://ibb.co/2F4Dtpp" />
-
+        <meta name="twitter:image" content="http://vettedtrainers.com/images/vt-logo.jpeg" />
+        <meta name="twitter:site" content="@TrainersVetted" />
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0095/9894.js" async="async"></script>
 
@@ -149,6 +149,21 @@ export default function Layout({ children, home }) {
       <main>{children}
 
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7981288.js"></script>
+        <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Vetted Trainers",
+    "url": "https://vettedtrainers.com",
+    "address": "5712 Industry Ln unit e, Frederick, MD 21703",
+    "sameAs": [
+      "https://www.facebook.com/Vettedtrainers/",
+      "https://twitter.com/TrainersVetted",
+      "https://www.instagram.com/vettedtrainers/",
+      "https://www.youtube.com/channel/UCMTekJJglOmXvy3AZGjbQYw"
+    ]
+  }
+</script>
       </main>
       {!home && (
         <div className={styles.backToHome}>
