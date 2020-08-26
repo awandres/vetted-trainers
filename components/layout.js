@@ -39,6 +39,10 @@ export default function Layout({ children, home }) {
         />
         <meta
           property="og:image"
+          content="http://vettedtrainers.com/images/vt-logo.jpeg"
+        />
+        <meta
+          property="og:image:secure_url"
           content="https://vettedtrainers.com/images/vt-logo.jpeg"
         />
         <meta property="og:title" content="Vetted Trainers" />
