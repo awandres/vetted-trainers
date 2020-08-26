@@ -41,8 +41,9 @@ export default function Layout({ children, home }) {
           property="og:image"
           content="https://ibb.co/2F4Dtpp"
         />
-        <meta name="og:title" content="Vetted Trainers" />
-        <meta name="og:description" content="Vetted Trainers is a group of experienced personal trainers that create dedicated workout and training programs to help you achieve your fitness goals." />
+        <meta property="og:title" content="Vetted Trainers" />
+        <meta property="og:description" content="Vetted Trainers is a group of experienced personal trainers that create dedicated workout and training programs to help you achieve your fitness goals." />
+        <meta property="og:url" content="https://vettedtrainers.com" />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Vetted Trainers" />
