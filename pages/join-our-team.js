@@ -10,6 +10,7 @@ export default function Home () {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <link rel="canonical" href="https://vettedtrainers.com/join-our-team" />
 
       </Head>
       <body className={joinStyles.body}>

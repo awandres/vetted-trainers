@@ -17,6 +17,7 @@ export default function Home() {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <link rel="canonical" href="https://vettedtrainers.com/" />
 
       </Head>
       <main className={homeStyles.body}>

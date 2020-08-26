@@ -14,6 +14,7 @@ export default function Home () {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <link rel="canonical" href="https://vettedtrainers.com/in-home-training-service" />
 
       </Head>
       <body className={servicesStyles.body}>
