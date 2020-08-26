@@ -167,9 +167,10 @@ export default function Layout({ children, home }) {
           ]
           `,
 
-        }}>
+        }}
+        />
 
-</script>
+
       </main>
       {!home && (
         <div className={styles.backToHome}>
