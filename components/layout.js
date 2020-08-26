@@ -152,7 +152,7 @@ export default function Layout({ children, home }) {
 
 
         <script type="application/ld+json">
-  {{
+  {{`
     "@context": "http://schema.org",
     "@type": "Organization",
     "name": "Vetted Trainers",
@@ -164,7 +164,7 @@ export default function Layout({ children, home }) {
       "https://www.instagram.com/vettedtrainers/",
       "https://www.youtube.com/channel/UCMTekJJglOmXvy3AZGjbQYw"
     ]
-  }}
+  `}}
 </script>
       </main>
       {!home && (
