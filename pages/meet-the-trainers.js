@@ -27,7 +27,7 @@ export default function Home () {
                 <h2>Joey</h2>
                 </div>
                 <div className={trainers.flexCol}>
-                <img className={trainers.bioImage} src="/images/Jose_VT_Trainer.jpg" />
+                <img className={trainers.bioImage} src="/images/J_VT_Trainer.jpg" />
                 <h2>Jose</h2>
                 </div>
                 <div className={trainers.flexCol}>
