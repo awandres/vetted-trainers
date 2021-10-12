@@ -67,9 +67,9 @@ class Menu extends React.Component {
       },
       menuItem: {
         fontFamily: `'Open Sans', sans-serif`,
-        fontSize: '1.rem',
-        padding: '1rem 0',
-        margin: '0 5%',
+        fontSize: '.8rem',
+        padding: '.8rem 0',
+        margin: '0 2%',
         cursor: 'pointer',
         textDecoration: 'none',
         textDecorationColor: 'white',
@@ -112,7 +112,7 @@ class Menu extends React.Component {
 
                   <Link href='/'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
             >
-            
+
             <h2 style={styles.headerItem}>Home</h2>
             </div></Link>
 
@@ -136,6 +136,13 @@ class Menu extends React.Component {
   >
   <h2 style={styles.headerItem}>About the Owners</h2>
   </div></Link>
+
+  <div style={styles.line} />
+
+  <Link href='/meet-the-trainers'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
+>
+<h2 style={styles.headerItem}>Meet The Trainers</h2>
+</div></Link>
 
                   <div style={styles.line} />
 

@@ -45,7 +45,7 @@
 
 .heroBanner {
   background-image: url('/images/get-to-work.jpg');
-  height:600px;
+  height:auto;
   width:100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -57,11 +57,11 @@
 }
 
 .heroBannerContent {
-  width:1000px;
+  width:100%;
   height:auto;
   background-color:rgba(20,20,20,.2);
   border-radius:10px;
-
+  padding-bottom:40px;
 }
 
 .button {
@@ -88,6 +88,8 @@
   display:block;
   text-align: center;
   margin-top:-20px;
+  width:75%;
+  margin:10px auto;
 }
 
 .capitalize {
@@ -107,6 +109,7 @@
   margin-bottom:-10px;
   text-shadow: 2px 2px 5px black;
   line-height:100px;
+  margin-top:0px;
 }
 
 .header {
@@ -190,11 +193,9 @@
   background-color:rgba(35,35,35,.8);
   width:100%;
   height:100%;
-  padding-left:400px;
-  padding-right:300px;
+  /* padding-left:400px;
+  padding-right:300px; */
   /* margin:50px 0px; */
-
-
 }
 
 .mail {
@@ -236,7 +237,7 @@
   align-items: center;
 }
 .about p {
-  padding:0px 300px;
+  padding:0px 20%;
 }
 
 .about ul {
@@ -379,7 +380,7 @@ margin-left:000px;
 /* RESPONSIVE  */
 
 
-@media screen and (min-width:769px) {
+/* @media screen and (min-width:769px) {
   .heroBanner {
     min-width:1200px;
   }
@@ -387,11 +388,45 @@ margin-left:000px;
   .services {
     min-width:1300px;
   }
+} */
+
+@media (max-width:1800px) {
+  .overlay {
+    padding-left:16%;
+    padding-right:16%;
+    /* margin:50px 0px; */
+  }
 }
+
+@media screen and (max-width:1500px) {
+  .headerHomeImage {
+    width: 8rem;
+    height: auto;
+    margin-left:-50px;
+    margin-right:100px;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+}
+
+@media (max-width:990px) {
+  .singleService img {
+    height:auto;
+  }
+}
+
 
 /* TABLET */
 
 @media screen and (max-width:768px) {
+  .services {
+    flex-direction: column;
+    padding:20px;
+  }
+  .singleService {
+width:auto;
+  }
 
 .heroBanner {
   background-position: 0px 0px;
@@ -455,7 +490,9 @@ margin-left:000px;
 
 }
 
-
+.mainHeader {
+  padding-top:125px;
+}
 
 /* MOBILE  */
 
@@ -493,7 +530,7 @@ margin-left:000px;
   font-size:2.9rem;
   color:white;
   padding:10px;
-  padding-top:10px;
+  padding-top:40px;
   text-align: center;
   margin-bottom:30px;
   text-shadow: 2px 2px 5px black;
@@ -502,6 +539,7 @@ margin-left:000px;
 
 .subHead {
   font-size:1.3rem;
+  width:100%;
 }
 
 .content {

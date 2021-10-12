@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import MediaQuery from 'react-responsive'
-
+import React, {useState} from 'react'
 const name = 'Vetted Trainers'
 export const siteTitle = 'Vetted Trainers'
 import Footer from './footer'
@@ -11,6 +10,15 @@ import Slider from './slider'
 import MobileMenu from './mobileMenu'
 
 export default function Layout({ children, home }) {
+  let[showServicesDropdown, setshowServicesDropdown] = useState(false);
+  let[showAboutDropdown, setshowAboutDropdown] = useState(false);
+
+  const dropdownOn  = () => setshowServicesDropdown(showServicesDropdown = true);
+  const dropdownOff  = () => setshowServicesDropdown(showServicesDropdown = false);
+  const aboutDropdownOn  = () => setshowAboutDropdown(showAboutDropdown = true);
+  const aboutDropdownOff  = () => setshowAboutDropdown(showAboutDropdown = false);
+
+
   return (
     <html lang="en" className={styles.container}>
       <Head>
@@ -75,36 +83,93 @@ export default function Layout({ children, home }) {
               className={`${styles.headerHomeImage} `}
               alt={name}
             /></Link>
-
-            <h2 className={utilStyles.headingLg}>
+<div className={styles.navRow}>
+            <h2 className={styles.headingLg}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>Home</a>
+                <a className={styles.colorInherit}>Home</a>
               </Link>
             </h2>
 
-            <h2 className={utilStyles.headingLg}>
+            <div onMouseLeave={dropdownOff} onMouseEnter={dropdownOn}><h2 className={`${styles.headingLg} ${styles.dropdown}`}  >
               <Link href="/services">
-                <a className={utilStyles.colorInherit}>Services</a>
+                <a className={styles.colorInherit}>Services</a>
               </Link>
-            </h2>
+              </h2>
 
-            <h2 className={utilStyles.headingLg}>
+              <div  className={showServicesDropdown ? styles.dropdownActive : styles.dropdownInactive} >
+              <div  className={styles.dropdownList}>
+              <div className={styles.dropdownItem}>
+              <h2 className={styles.headingLg}>
+              <Link href="/virtual-training-service">
+                <a className={showServicesDropdown ? styles.dropdownActive : styles.colorInherit }>Virtual Training </a>
+              </Link>
+              </h2>
+              </div>
+              <div className={styles.dropdownItem}>
+              <h2 className={styles.headingLg}>
+              <Link href="/private-gym-training-service">
+                <a className={showServicesDropdown ? styles.dropdownActive : styles.colorInherit }>Private Gym Training </a>
+              </Link>
+              </h2>
+              </div>
+              <div className={styles.dropdownItem}>
+              <h2 className={styles.headingLg}>
+              <Link href="/in-home-training-service">
+                <a className={showServicesDropdown ? styles.dropdownActive : styles.colorInherit }>In Home Training </a>
+              </Link>
+              </h2>
+              </div>
+              </div>
+              </div>
+              </div>
+
+
+
+            <h2 className={styles.headingLg}>
               <Link href="/join-our-team">
-                <a className={utilStyles.colorInherit}>Join Our Team</a>
+                <a className={styles.colorInherit}>Join Our Team</a>
               </Link>
             </h2>
 
-            <h2 className={utilStyles.headingLg}>
+
+            <div onMouseLeave={aboutDropdownOff} onMouseEnter={aboutDropdownOn}><h2 className={`${styles.headingLg} ${styles.dropdown}`}  >
               <Link href="/about-the-owners">
-                <a className={utilStyles.colorInherit}>About the Owners</a>
+                <a className={styles.colorInherit}>About</a>
+              </Link>
+              </h2>
+
+              <div  className={showAboutDropdown ? styles.dropdownActive : styles.dropdownInactive} >
+              <div  className={styles.dropdownList}>
+              <div className={styles.dropdownItem}>
+              <h2 className={styles.headingLg}>
+              <Link href="/virtual-training-service">
+                <a className={showAboutDropdown ? styles.dropdownActive : styles.colorInherit }>About The Owners </a>
+              </Link>
+              </h2>
+              </div>
+              <div className={styles.dropdownItem}>
+              <h2 className={styles.headingLg}>
+              <Link href="/meet-the-trainers">
+                <a className={showAboutDropdown ? styles.dropdownActive : styles.colorInherit }>Meet The Trainers </a>
+              </Link>
+              </h2>
+              </div>
+
+              </div>
+              </div>
+              </div>
+
+
+
+
+            <h2 className={` ${styles.headingLg} ${styles.navButton} `}>
+              <Link href="/general-training-intake">
+
+                <a className={` ${styles.colorInherit}`}>Request <br className={styles.navBreak} /> Consultation</a>
               </Link>
             </h2>
 
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/general-training-intake">
-                <a className={` ${utilStyles.colorInherit} ${utilStyles.navButton} `}>Request Consultation</a>
-              </Link>
-            </h2>
+            </div>
           </>
         ) : (
           <>
@@ -112,30 +177,30 @@ export default function Layout({ children, home }) {
               <a>
                 <img
                   src="/images/vetted-logo.png"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                  className={`${styles.headerImage} ${styles.borderCircle}`}
                   alt={name}
                 />
               </a>
             </Link>
 
-            <h2 className={utilStyles.headingLg}>
+            <h2 className={styles.headingLg}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>Home</a>
+                <a className={styles.colorInherit}>Home</a>
               </Link>
             </h2>
 
 
-            <h2 className={utilStyles.headingLg}>
+            <h2 className={styles.headingLg}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>Services</a>
+                <a className={styles.colorInherit}>Services</a>
               </Link>
             </h2>
 
 
 
-            <h2 className={utilStyles.headingLg}>
+            <h2 className={styles.headingLg}>
               <Link href="/general-training-intake">
-                <a className={utilStyles.colorInherit}>Request Consultation</a>
+                <a className={styles.colorInherit}>Request Consultation</a>
               </Link>
             </h2>
           </>
@@ -149,21 +214,7 @@ export default function Layout({ children, home }) {
       <main>{children}
 
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7981288.js"></script>
-        <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Vetted Trainers",
-    "url": "https://vettedtrainers.com",
-    "address": "5712 Industry Ln unit e, Frederick, MD 21703",
-    "sameAs": [
-      "https://www.facebook.com/Vettedtrainers/",
-      "https://twitter.com/TrainersVetted",
-      "https://www.instagram.com/vettedtrainers/",
-      "https://www.youtube.com/channel/UCMTekJJglOmXvy3AZGjbQYw"
-    ]
-  }
-</script>
+
       </main>
       {!home && (
         <div className={styles.backToHome}>

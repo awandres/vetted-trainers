@@ -1,0 +1,13 @@
+.bioImage { width:100%;  margin-bottom:10px;}
+.flexRow { display:flex; flex-direction: row; justify-content: space-evenly; padding:20px 0px;}
+.flexCol { width:27.33%; }
+.flexContainer h2 { margin-top:.5em!important;}
+
+@media (max-width:768px) {
+  .flexContainer { margin-top:115px; }
+}
+
+@media (max-width:550px) {
+  .flexRow { flex-wrap:wrap; }
+  .flexCol { width:80%; }
+}

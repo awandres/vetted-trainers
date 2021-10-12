@@ -35,7 +35,7 @@ class MobileMenu extends React.Component {
           alignItems: 'end',
           marginBottom:'30px',
           justifyContent: 'flex-end',
-          background: 'rgba(0,0,0, .4)',
+          background: 'rgba(0,0,0, .8)',
           width: '100%',
           color: 'white',
           fontFamily: 'Lobster',

@@ -8,18 +8,26 @@ img: "/images/cathy-testimonial.jpg"
 {
 name:"Colleen Q",
 review:"I have worked with Vetted Trainers on several occasions. Joel designed a great fitness program that has improved my overall health. Also, when various musculoskeletal issues related to sports and exercise have arisen, Vetted Trainers , with their phenomenal knowledge of kinesiology, has solved a number of my issues. Throughout my program, Joel is a great motivator, and always offers options for improvement at my own level. This level of customized service is hard to find in today's fitness arena. I highly recommend Vetted Trainers. ",
+img: "/images/vt-favicon.png"
+
 },
 {
 name: "Simon K",
-review: "Joel and Vetted Trainers takes a wholistic approach to building strength and Injury recovery. Their wealth of knowledge allows them to make custom tailored programs to your specific needs. After I tore my meniscus, Joel developed a program that focused on mobility, muscle releases, and strength training to break down the scar tissue in my knee and increase mobility. Once I had a strong foundation, Joel's training built up the strength in my knee and helped prevent injuries in the future. I can't recommend him enough! "
+review: "Joel and Vetted Trainers takes a wholistic approach to building strength and Injury recovery. Their wealth of knowledge allows them to make custom tailored programs to your specific needs. After I tore my meniscus, Joel developed a program that focused on mobility, muscle releases, and strength training to break down the scar tissue in my knee and increase mobility. Once I had a strong foundation, Joel's training built up the strength in my knee and helped prevent injuries in the future. I can't recommend him enough! ",
+img: "/images/vt-favicon.png"
+
 },
 {
 name: "Charlie C",
-review: "Vetted Trainers is an important part of my life. Without him I doubt My 66 year old body would feel as good after rowing 240 miles of the Colorado River through Grand Canyon. "
+review: "Vetted Trainers is an important part of my life. Without him I doubt My 66 year old body would feel as good after rowing 240 miles of the Colorado River through Grand Canyon. ",
+img: "/images/vt-favicon.png"
+
 },
 {
 name: "Betty D",
-review: "I have become stronger, more flexible, and I feel super healthy since working with Vetted Trainers in my truly individualized program. Vetted Trainers are the best—and also, it’s fun! "
+review: "I have become stronger, more flexible, and I feel super healthy since working with Vetted Trainers in my truly individualized program. Vetted Trainers are the best—and also, it’s fun! ",
+img: "/images/vt-favicon.png"
+
 }]
 
 class Slider extends React.Component {
