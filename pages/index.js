@@ -77,7 +77,7 @@ export default function Home() {
 <div className={homeStyles.services}>
       <div className={homeStyles.singleService}>
         <img src="/images/IMG_5923.jpg" alt="Woman boxing and working out with a trainer at her personal gym"/>
-        <h2>Private Gym Personal Training</h2>
+        <h2>Private Gym <br className={homeStyles.breakFix} />Personal Training</h2>
         <hr className={homeStyles.divider} />
 
         <p>Are you concerned with going to a big commercial gym due to the Covid-19 pandemic? Come train in our appointment only, private gym.</p>
@@ -93,7 +93,7 @@ export default function Home() {
 
       <div className={homeStyles.singleService}>
       <img src="/images/VT-36.jpg" alt="Personal trainer helping older woman stretch in-home"/>
-      <h2>In Home Personal Training</h2>
+      <h2>In Home <br className={homeStyles.breakFix} />Personal Training</h2>
       <hr className={homeStyles.divider} />
 
       <p>A Vetted Trainer will take you through a workout from the privacy and comfort of your own home. You don't even need any equipment. Stay safe and in shape while you exercise from home!</p>
@@ -107,7 +107,7 @@ export default function Home() {
 
       <div className={homeStyles.singleService}>
       <img src="/images/VT-33.jpg" alt="Woman excercising virtually with her laptop near a pool" />
-      <h2>Virtual Training</h2>
+      <h2>Virtual <br className={homeStyles.breakFix} />Training</h2>
       <hr className={homeStyles.divider} />
 
       <p>This is your germ free option! Your Vetted Trainer will remotely take you through a mobility, flexibility, and strength workout.

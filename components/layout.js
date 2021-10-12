@@ -98,27 +98,32 @@ export default function Layout({ children, home }) {
 
               <div  className={showServicesDropdown ? styles.dropdownActive : styles.dropdownInactive} >
               <div  className={styles.dropdownList}>
+              <Link href="/virtual-training-service"><a className={showServicesDropdown ? styles.dropdownActive : styles.colorInherit }>
+<div className={styles.dropdownItem}>
+              <h2 className={styles.headingLg}>
+                Virtual Training
+              </h2>
+              </div></a>
+              </Link>
+              <Link href="/private-gym-training-service"><a className={showServicesDropdown ? styles.dropdownActive : styles.colorInherit }>
               <div className={styles.dropdownItem}>
               <h2 className={styles.headingLg}>
-              <Link href="/virtual-training-service">
-                <a className={showServicesDropdown ? styles.dropdownActive : styles.colorInherit }>Virtual Training </a>
-              </Link>
+                Private Gym Training
               </h2>
               </div>
-              <div className={styles.dropdownItem}>
-              <h2 className={styles.headingLg}>
-              <Link href="/private-gym-training-service">
-                <a className={showServicesDropdown ? styles.dropdownActive : styles.colorInherit }>Private Gym Training </a>
+              </a>
               </Link>
-              </h2>
-              </div>
-              <div className={styles.dropdownItem}>
-              <h2 className={styles.headingLg}>
+
               <Link href="/in-home-training-service">
-                <a className={showServicesDropdown ? styles.dropdownActive : styles.colorInherit }>In Home Training </a>
-              </Link>
+              <a className={showServicesDropdown ? styles.dropdownActive : styles.colorInherit }>
+              <div className={styles.dropdownItem}>
+              <h2 className={styles.headingLg}>
+                In Home Training
               </h2>
               </div>
+              </a>
+              </Link>
+
               </div>
               </div>
               </div>
@@ -140,20 +145,25 @@ export default function Layout({ children, home }) {
 
               <div  className={showAboutDropdown ? styles.dropdownActive : styles.dropdownInactive} >
               <div  className={styles.dropdownList}>
+              <Link href="/virtual-training-service"><a className={showAboutDropdown ? styles.dropdownActive : styles.colorInherit }>
               <div className={styles.dropdownItem}>
               <h2 className={styles.headingLg}>
-              <Link href="/virtual-training-service">
-                <a className={showAboutDropdown ? styles.dropdownActive : styles.colorInherit }>About The Owners </a>
-              </Link>
+                About The Owners
               </h2>
               </div>
-              <div className={styles.dropdownItem}>
-              <h2 className={styles.headingLg}>
+              </a>
+              </Link>
+
               <Link href="/meet-the-trainers">
-                <a className={showAboutDropdown ? styles.dropdownActive : styles.colorInherit }>Meet The Trainers </a>
-              </Link>
+              <a className={showAboutDropdown ? styles.dropdownActive : styles.colorInherit }>
+              <div className={styles.dropdownItem}>
+              <h2 className={styles.headingLg}>
+                Meet The Trainers
               </h2>
               </div>
+              </a>
+              </Link>
+
 
               </div>
               </div>

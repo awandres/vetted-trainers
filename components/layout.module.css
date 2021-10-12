@@ -122,8 +122,11 @@
 .dropdownActive { display: block; }
 .dropdownInactive { display:none; }
 .dropdownList {  position: absolute; display: flex; flex-direction: column; background-color: rgba(0, 0, 0, .7)}
+.headingLg a { text-decoration: none!important;}
+.dropdownList .headingLg { transition:none!important; }
 .dropdownList .headingLg a{ text-decoration-color: #50BFF4!important; text-decoration: none!important;}
-.dropdownItem:hover { background-color:#50BFF4; color:black!important;}
+.dropdownList a:hover { background-color:#50BFF4; color:black!important; text-decoration: none!important;}
+.dropdownList a:hover .headingLg { color:black!important;}
 .dropdownItem:hover .headingLg a { color:black;}
 /* @media screen and (min-width:769px) {
   .header {
