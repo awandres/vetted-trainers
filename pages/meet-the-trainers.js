@@ -23,30 +23,30 @@ export default function Home () {
         <div className={trainers.flexContainer}>
               <div className={trainers.flexRow}>
                 <div className={trainers.flexCol}>
-                <img className={trainers.bioImage} src="/images/Joey VT Trainer.jpg" />
+                <img className={trainers.bioImage} src="/images/Joey_VT_Trainer.jpg" />
                 <h2>Joey</h2>
                 </div>
                 <div className={trainers.flexCol}>
-                <img className={trainers.bioImage} src="/images/Jose VT Trainer.jpg" />
+                <img className={trainers.bioImage} src="/images/Jose_VT_Trainer.jpg" />
                 <h2>Jose</h2>
                 </div>
                 <div className={trainers.flexCol}>
-                <img className={trainers.bioImage} src="/images/Kade VT Trainer.jpg" />
+                <img className={trainers.bioImage} src="/images/Kade_VT_Trainer.jpg" />
                 <h2>Kade</h2>
                 </div>
                 </div>
                 <div className={trainers.flexRow}>
 
                 <div className={trainers.flexCol}>
-                <img className={trainers.bioImage} src="/images/Mike VT Trainer.jpg" />
+                <img className={trainers.bioImage} src="/images/Mike_VT_Trainer.jpg" />
                 <h2>Mike</h2>
                 </div>
                 <div className={trainers.flexCol}>
-                <img className={trainers.bioImage} src="/images/Nick VT Trainer.jpg" />
+                <img className={trainers.bioImage} src="/images/Nick_VT_Trainer.jpg" />
                 <h2>Nick</h2>
                 </div>
                 <div className={trainers.flexCol}>
-                <img className={trainers.bioImage} src="/images/Tim VT Trainer.jpg" />
+                <img className={trainers.bioImage} src="/images/Tim_VT_Trainer.jpg" />
                 <h2>Tim</h2>
                 </div>
                 </div>
