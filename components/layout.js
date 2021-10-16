@@ -130,7 +130,7 @@ export default function Layout({ children, home }) {
 
               <h2 className={styles.headingLg}>
                 <Link href="/products">
-                  <a className={styles.colorInherit}>Shop</a>
+                  <a className={styles.colorInherit}>Vetted Products</a>
                 </Link>
               </h2>
 
