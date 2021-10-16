@@ -130,6 +130,13 @@ class Menu extends React.Component {
   <h2 style={styles.headerItem}>Join Our Team</h2>
   </div></Link>
 
+  <div style={styles.line} />
+
+  <Link href='/products'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
+>
+<h2 style={styles.headerItem}>Shop</h2>
+</div></Link>
+
                   <div style={styles.line} />
 
                   <Link href='/about-the-owners'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
