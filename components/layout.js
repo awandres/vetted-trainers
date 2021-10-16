@@ -128,7 +128,11 @@ export default function Layout({ children, home }) {
               </div>
               </div>
 
-
+              <h2 className={styles.headingLg}>
+                <Link href="/products">
+                  <a className={styles.colorInherit}>Shop</a>
+                </Link>
+              </h2>
 
             <h2 className={styles.headingLg}>
               <Link href="/join-our-team">
@@ -168,6 +172,7 @@ export default function Layout({ children, home }) {
               </div>
               </div>
               </div>
+
 
 
 

@@ -15,7 +15,7 @@ export default function Home () {
       </Head>
       <body className={joinStyles.body}>
 
-
+ 
 
       <section className={joinStyles.mainContent}>
 

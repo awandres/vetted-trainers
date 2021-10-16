@@ -1,1 +1,25 @@
 .productIframe { height:250px; width:320px; }
+.mainContent { background-color: #fff; padding:50px 20px; }
+.productRow { display:flex; justify-content: center; align-items: center; margin-top:20px;}
+.productCol { padding:10px 30px; width:30%; text-align: center;}
+.productCol img { margin:0 auto; margin-bottom:10px;}
+
+.productContainer { margin:0 auto;}
+@media (min-width:1400px) {
+  .productContainer { max-width:1400px }
+
+}
+
+@media (max-width:990px) {
+  .productCol { padding:30px 30px; width:50%; text-align: center;}
+  .mainContent { background-color: #fff; padding:80px 20px; }
+
+}
+
+@media (max-width:767px) {
+  .productRow { display:block; }
+  .productCol { padding:30px 30px; width:100%; text-align: center;}
+  .mainContent { background-color: #fff; padding:80px 20px; }
+  .productRow { margin-top:0px;}
+
+}
