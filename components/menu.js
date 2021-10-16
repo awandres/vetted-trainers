@@ -59,7 +59,7 @@ class Menu extends React.Component {
         animation: '1s appear forwards',
         paddingTop: '80px',
         animation: '1s appear forwards',
-        paddingTop: '80px',
+        paddingTop: '100px',
         animationDelay: 1
       },
       menuList: {
@@ -68,7 +68,7 @@ class Menu extends React.Component {
       menuItem: {
         fontFamily: `'Open Sans', sans-serif`,
         fontSize: '.8rem',
-        padding: '.8rem 0',
+        padding: '.3rem 0',
         margin: '0 2%',
         cursor: 'pointer',
         textDecoration: 'none',
@@ -122,7 +122,12 @@ class Menu extends React.Component {
       >
       <h2 style={styles.headerItem}>Services</h2>
       </div></Link>
+      <div style={styles.line} />
 
+      <Link href='/products'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
+    >
+    <h2 style={styles.headerItem}>Shop</h2>
+    </div></Link>
                   <div style={styles.line} />
 
                   <Link href='/join-our-team'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
@@ -130,12 +135,7 @@ class Menu extends React.Component {
   <h2 style={styles.headerItem}>Join Our Team</h2>
   </div></Link>
 
-  <div style={styles.line} />
 
-  <Link href='/products'><div style={styles.menuItem} onClick={() => this.handleMenuClick()}
->
-<h2 style={styles.headerItem}>Shop</h2>
-</div></Link>
 
                   <div style={styles.line} />
 
