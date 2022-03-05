@@ -72,6 +72,6 @@
 .bestOfLogoHeader { max-width:90px!important; border-radius: 86px; margin-left: -100px; margin-bottom: 24px;}
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1350px) {
 .bestOfLogoHeader { display:none; }
 }
