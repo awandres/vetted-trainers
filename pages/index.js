@@ -45,7 +45,7 @@ export default function Home() {
       <hr className={homeStyles.divider} />
 
       <p className={` ${homeStyles.content} ${homeStyles.centered} `}>Vetted Trainers is a team of top notch trainers who combine the best of strength training, mobility, and tissue work to optimize your human movement. We also use various modalities (private gym sessions, in home sessions, and virtual sessions) to meet the needs of our clients so you can become stronger and healthier no matter where you are!</p>
-
+<img className={utilStyles.bestOfLogo} src="/images/best-of-frederick.jpg" alt="Woman doing barbell squats in front of a mirror with a personal trainer"/>
 
         <img src="/images/joel_nicole_squats.jpg" alt="Woman doing barbell squats in front of a mirror with a personal trainer"/>
 

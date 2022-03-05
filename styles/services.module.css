@@ -488,6 +488,14 @@ margin-left:000px;
   margin-right:-100px;
 }
 
+.leftImageNutrition {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;}
+
 
 
 
@@ -619,6 +627,11 @@ margin-left:000px;
   height:400px;
   background-position:0px 0px;
   background-repeat: no-repeat;
+}
+
+.leftImageNutrition {
+  width:80%;
+  margin-right:0px;
 }
 
 .contentContainer {

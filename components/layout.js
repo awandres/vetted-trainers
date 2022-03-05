@@ -8,6 +8,7 @@ export const siteTitle = 'Vetted Trainers'
 import Footer from './footer'
 import Slider from './slider'
 import MobileMenu from './mobileMenu'
+import utilStyles from '../styles/utils.module.css'
 
 export default function Layout({ children, home }) {
   let[showServicesDropdown, setshowServicesDropdown] = useState(false);
@@ -83,6 +84,13 @@ export default function Layout({ children, home }) {
               className={`${styles.headerHomeImage} `}
               alt={name}
             /></Link>
+
+            <img
+              src="/images/best-of-frederick.jpg"
+              className={`${utilStyles.bestOfLogoHeader} `}
+              alt={name}
+            />
+
 <div className={styles.navRow}>
             <h2 className={styles.headingLg}>
               <Link href="/">

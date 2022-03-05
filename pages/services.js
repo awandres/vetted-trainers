@@ -157,6 +157,31 @@ Services</h1>
           </div>
         </section>
 
+        <section className={servicesStyles.serviceSectionBlack}>
+
+        <div className={servicesStyles.leftImageNutrition}>
+
+          <img src="/images/G_Vetted Nutrition white clear background big.png" />
+          </div>
+          <div className={servicesStyles.serviceContent}>
+
+            <h1 className={servicesStyles.contentHeader}>
+    Vetted Nutrition
+      </h1>
+            <hr className={servicesStyles.divider} />
+
+            <p>Vetted Nutrition Philosophy: We teach people to feed their body and good bacteria in a sustainable way that promotes a healthy gut which promotes fat loss and lean muscle growth.</p>
+
+            <Link href='/vetted-nutrition-intake'>
+            <a className={utilStyles.colorInherit}>
+            <div className={servicesStyles.button}>
+              Learn More
+            </div>
+            </a>
+            </Link>
+          </div>
+        </section>
+
         <section className={servicesStyles.mail}>
           <div className={servicesStyles.overlay}>
             <div>

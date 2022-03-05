@@ -41,6 +41,8 @@ return (
     <a className={utilStyles.colorInherit} href ="https://www.instagram.com/vettedtrainers/" target="_blank">
       <img src='/images/ig-icon.png' alt="Purple instagram icon" />
     </a>
+
+    <img className={utilStyles.bestOfLogo} src="/images/best-of-frederick.jpg" alt="Woman doing barbell squats in front of a mirror with a personal trainer"/>
     </div>
   </div>
 
