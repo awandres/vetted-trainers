@@ -124,6 +124,16 @@ export default function Layout({ children, home }) {
               </a>
               </Link>
 
+              <Link href="/vetted-nutrition">
+              <a className={showServicesDropdown ? styles.dropdownActive : styles.colorInherit }>
+              <div className={styles.dropdownItem}>
+              <h2 className={styles.headingLg}>
+                Vetted Nutrition
+              </h2>
+              </div>
+              </a>
+              </Link>
+
               </div>
               </div>
               </div>

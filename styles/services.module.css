@@ -45,6 +45,26 @@
 
 }
 
+.nutritionBanner {
+  background-image: url('/images/nutrition.jpg');
+  height:600px;
+  width:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nutritionBannerContent {
+  width:100%;
+  height:auto;
+  background-color:rgba(20,20,20,.4);
+  border-radius:10px;
+
+}
+
 .button {
   background-color:#50BFF4;
   align-self:center;
@@ -89,6 +109,19 @@
   /* margin-bottom:-10px; */
   text-shadow: 2px 2px 5px black;
   /* line-height:100px; */
+  font-weight:200;
+}
+
+.nutritionHeader {
+  font-size:10rem;
+  text-transform: uppercase;
+  color:white;
+  /* padding:30px; */
+  /* padding-top:10px; */
+  text-align: center;
+  /* margin-bottom:-10px; */
+  text-shadow: 2px 2px 5px black;
+  line-height:180px;
   font-weight:200;
 }
 
@@ -476,6 +509,10 @@ margin-left:000px;
     /* min-width:1200px; */
     width: 100%;
   }
+  .nutritionBanner {
+    /* min-width:1200px; */
+    width: 100%;
+  }
 
   /* .services {
     min-width:1300px;
@@ -491,6 +528,10 @@ margin-left:000px;
 
     background-position: 0 -100px;
   }
+  .nutritionBanner {
+
+    background-position: 0 -100px;
+  }
 }
 /* TABLET */
 
@@ -502,13 +543,29 @@ margin-left:000px;
 
 }
 
+.nutritionBanner {
+  background-position: 0px -100px;
+  height:400px;
+  width:auto;
+
+}
+
 .services { flex-direction: column;}
 
-.heroBannerContent {
+.nutritionBannerContent {
+  width:auto;
+}
+
+.nutritionBannerContent {
   width:auto;
 }
 
 .mainHeader {
+  font-size:3.5rem;
+  line-height: normal;
+}
+
+.nutritionHeader {
   font-size:3.5rem;
   line-height: normal;
 }
@@ -630,7 +687,28 @@ margin-left:000px;
     margin-top:100px;
   }
 
+  .nutritionBanner {
+    height:auto;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nutritionBannerContent {
+    width: auto;
+    margin-top:100px;
+  }
+
   .mainHeader {
+    font-size:4rem;
+  }
+
+  .nutritionHeader {
     font-size:4rem;
   }
 
