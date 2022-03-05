@@ -129,7 +129,7 @@ export default function Home() {
 <hr className={homeStyles.divider} />
 <div className={homeStyles.smallContainer}>
 <p className={homeStyles.homeText}>Vetted Nutrition Philosophy: We teach people to feed their body and good bacteria in a sustainable way that promotes a healthy gut which promotes fat loss and lean muscle growth.</p>
-<Link href="/virtual-training-intake">
+<Link href="/vetted-nutrition">
   <a className={utilStyles.colorInherit}><div className={homeStyles.button}>
     Learn More
     </div></a>
