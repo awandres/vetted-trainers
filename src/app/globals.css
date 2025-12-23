@@ -8,17 +8,7 @@
   --vt-bg-darker: #0f0f0f;
 }
 
-/* Base font size increase (~20% larger) */
-html {
-  font-size: 19.2px; /* 16px * 1.2 = 19.2px */
-}
-
-/* Responsive font sizing */
-@media (max-width: 768px) {
-  html {
-    font-size: 17.5px;
-  }
-}
+/* Using default browser font size (16px) for proper Tailwind scaling */
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
