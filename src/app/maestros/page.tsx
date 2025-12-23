@@ -14,81 +14,79 @@ export const metadata: Metadata = {
 
 const CALENDLY_URL = "https://calendly.com/vetted-health/vetted-trainers-disco";
 
-// Vagaro scheduling links for each trainer
-const VAGARO_BASE = "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=";
-
+// Vagaro scheduling links for each trainer (from vettedhealth.org)
 const maestros = [
   {
     name: "Jose",
     fullName: "Jose Recio",
     image: "/images/Trainer Headshots/Jose Recio Headshot.png",
-    scheduleUrl: CALENDLY_URL,
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuig9NN/U9q7ES2zuiyah4qSHTY8ucymBjJxd/eDLWxqP9Z3Gqjwfova0JD/1ThJglQPaIDXdrv/EOTTIHrJZtd1fRmdbd5zom5QZa7O/BFpL/tAdqUD2DtrT20J7aop0WMwWCS3pgliJcuKq+jIgS20AWpE3KjN1ToxhOy95LKh/U8X29Wv2/BVRUI/75JQ+XAR1o+hz+SIAf8AgKeHx5Bn0QmGuAUM6GW/Nb/UUS2IgQguMMPJKZl4r9mxBRbBZM1arr8n4bLUtB4QOtyrs0W3zsyDEX3FhiA8KdW09npOdHwK+rmCSP1AJEcAIfOd+FJPaQU7dxkvOMU7S/tQb4um",
   },
   {
     name: "Kade",
     fullName: "Kade Arrington",
     image: "/images/Trainer Headshots/Kade Arrington(1).png",
-    scheduleUrl: CALENDLY_URL,
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuig9NN/U9q7ES2zuiyah4qSHTY8ucymBjJxd/eDLWxqP9Z3Gqjwfova0JD/1ThJglQPaIDXdrv/EOTTIHrJZtd1fRmdbd5zom5QZa7O/BFpL/tAdqUD2DtrT20J7aop0WMwWCS3pgliJcuKq+jIgS20AWpE3KjN1ToxhOy95LKh/U8X29Wv2/BVRUI/75JQ+XAR1o+hz+SIAf8AgKeHx5Bn0QmGuAUM6GW/Nb/UUS2IgQguMMPJKZl4r9mxBRbBZM36WIPSzCOHKMFO34yKa+G+G3qmMPx+UbMrgcbb7RFUMxjQdmryT+7IdY6LZLfaPZH0XPLZ9KXkTgOWDzPznEVs",
   },
   {
     name: "Michael",
     fullName: "Michael Coleman",
     image: "/images/Trainer Headshots/Michael Coleman Head Shot.png",
-    scheduleUrl: CALENDLY_URL,
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuig9NN/U9q7ES2zuiyah4qSHTY8ucymBjJxd/eDLWxqP9Z3Gqjwfova0JD/1ThJglQPaIDXdrv/EOTTIHrJZtd1fRmdbd5zom5QZa7O/BFpL/tAdqUD2DtrT20J7aop0WMwWCS3pgliJcuKq+jIgS20AWpE3KjN1ToxhOy95LKh/U8X29Wv2/BVRUI/75JQ+XAR1o+hz+SIAf8AgKeHx5Bn0QmGuAUM6GW/Nb/UUS2IgQguMMPJKZl4r9mxBRbBZM3zmzworsrhnZ/cQTIw3lSatHhqB24u+DtcA1tQnvqWizOMXtMxn/eMGBastC2KPqcKd6HONtjhjfA05RZwTo79cn+495BkQBgZHXPGhSaY7OufU2DvFHx/XJ3Ub5gcKxA=",
   },
   {
     name: "Youssef",
     fullName: "Youssef Salem",
     image: "/images/Trainer Headshots/Youssef Salem Headshot.png",
-    scheduleUrl: CALENDLY_URL,
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuig9NN/U9q7ES2zuiyah4qSHTY8ucymBjJxd/eDLWxqP9Z3Gqjwfova0JD/1ThJglQPaIDXdrv/EOTTIHrJZtd1fRmdbd5zom5QZa7O/BFpL/tAdqUD2DtrT20J7aop0WMwWCS3pgliJcuKq+jIgS20AWpE3KjN1ToxhOy95LKh/U8X29Wv2/BVRUI/75JQ+XAR1o+hz+SIAf8AgKeHx5Bn0QmGuAUM6GW/Nb/UUS2IgQguMMPJKZl4r9mxBRbBZM2wErbvUSwkHYyWF3tQNkKC68vbEKzXyP6csUw07P2/Jr57xHnGBu7vq1MjCAjefwnPVxC5SxqQ1xi0+8RTq9iRuMu6VpD502/kTa+BiDTLzIn7oQ7CijM43hkxV9kh9jo=",
   },
   {
     name: "Lex",
     fullName: "Lex Titus",
     image: "/images/Trainer Headshots/Lex Titus headshot.png",
-    scheduleUrl: CALENDLY_URL,
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuig9NN/U9q7ES2zuiyah4qSHTY8ucymBjJxd/eDLWxqP9Z3Gqjwfova0JD/1ThJglQPaIDXdrv/EOTTIHrJZtd1fRmdbd5zom5QZa7O/BFpL/tAdqUD2DtrT20J7aop0WMwWCS3pgliJcuKq+jIgS20AWpE3KjN1ToxhOy95LKh/U8X29Wv2/BVRUI/75JQ+XAR1o+hz+SIAf8AgKeHx5Bn0QmGuAUM6GW/Nb/UUS2IgQguMMPJKZl4r9mxBRbBZM0y7FhOAtNBFl/ENd57zAXFl0ZuAK64eAGiMXd9AfQV1cCUHrpS5UcVF91aE+AWSopBlcuwrwCo4V5fdyFIVHUJ",
   },
   {
     name: "Shane",
     fullName: "Shane Mullen",
     image: "/images/Trainer Headshots/Shane Mullen Headshot.png",
-    scheduleUrl: CALENDLY_URL,
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuig9NN/U9q7ES2zuiyah4qSHTY8ucymBjJxd/eDLWxqP9Z3Gqjwfova0JD/1ThJglQPaIDXdrv/EOTTIHrJZtd1fRmdbd5zom5QZa7O/BFpL/tAdqUD2DtrT20J7aop0WMwWCS3pgliJcuKq+jIgS20AWpE3KjN1ToxhOy95LKh/U8X29Wv2/BVRUI/75JQ+XAR1o+hz+SIAf8AgKeHx5Bn0QmGuAUM6GW/Nb/UUS2IgQguMMPJKZl4r9mxBRbBZM1bdKfDt1cPUwKC/tVTPrfURTFLaoh98QcHec7bU8BuHnX1o8WxwoghQHSK/E0VIZcx+JKwdtS3CM9CNfa3wQNF",
   },
   {
     name: "Ben",
     fullName: "Ben Sicat",
     image: "/images/Trainer Headshots/Ben Sicat headshot.png",
-    scheduleUrl: CALENDLY_URL,
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuig9NN/U9q7ES2zuiyah4qSHTY8ucymBjJxd/eDLWxqP9Z3Gqjwfova0JD/1ThJglQPaIDXdrv/EOTTIHrJZtd1fRmdbd5zom5QZa7O/BFpL/tAdqUD2DtrT20J7aop0WMwWCS3pgliJcuKq+jIgS20AWpE3KjN1ToxhOy95LKh/U8X29Wv2/BVRUI/75JQ+XAR1o+hz+SIAf8AgKeHx5Bn0QmGuAUM6GW/Nb/UUS2IgQguMMPJKZl4r9mxBRbBZM2FDcHXqohU6kM/6adyJNB6h1kClFL+WSbrNswUBmWHc9YyaosPJgSdtogdcevjRUrVXt9ktTKO0x+ASY9uL5Sf",
   },
   {
     name: "Nick",
     fullName: "Nick Rispoli",
     image: "/images/Trainer Headshots/Nick Rispoli Headshot.png",
-    scheduleUrl: CALENDLY_URL,
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuig9NN/U9q7ES2zuiyah4qSHTY8ucymBjJxd/eDLWxqP9Z3Gqjwfova0JD/1ThJglQPaIDXdrv/EOTTIHrJZtd1fRmdbd5zom5QZa7O/BFpL/tAdqUD2DtrT20J7aop0WMwWCS3pgliJcuKq+jIgS20AWpE3KjN1ToxhOy95LKh/U8X29Wv2/BVRUI/75JQ+XAR1o+hz+SIAf8AgKeHx5Bn0QmGuAUM6GW/Nb/UUS2IgQguMMPJKZl4r9mxBRbBZM3z3kjZuSi4G69u1Oiw0hUN9YwDhtEnwRUGWujlgTp71UYotLnYWeGxoemUZZCFPXPlhFN4UTjcYUQwWGy/qsyl",
   },
   {
     name: "Jae",
     fullName: "Jaelyn Blanc",
     image: "/images/Trainer Headshots/Jaelyn Blanc headshot.png",
-    scheduleUrl: CALENDLY_URL,
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpujW/qE//U1E4jOc7j8U/G3G7ZDAG93d/90M/2+t17WFJY8nFZb2Jjj8nPmksaxxhPNRGdDqe0IBBmed3YLfHnu79PLSZG4hrkDMvJu8RyEfOz6dOCM9owtCsMF2M+14aJ2cAI+ivEU4+uLLT9UxjJgp8hiZObL/jNe15muF2dH5StBqYy+IWedl0xWH6ZpBGHTEihsqAUrDAGB7d5jZ/WKDt/Yh+35aUXwMrPgUkO8vg0C0dph4H6GdwfZnfdu73+5eo8g/RoFuN+9+f2EMYEZr2hZ7ACJmSJTp3sfa7T9U1BEmy1MM7IetbQmLlxjjLEQ9k4Ys+rr+CwwPMRUINMPypIzF2sZ3kqnb26WhcIqZMA==",
   },
   {
-    name: "Luke",
-    fullName: "Luke Boyd",
-    image: "/images/Trainer Headshots/Luke Boyds headshot.png",
-    scheduleUrl: CALENDLY_URL,
+    name: "Matthew",
+    fullName: "Matthew",
+    image: "/images/Trainer Headshots/Vetted Lions(18)(1).png",
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuig9NN/U9q7ES2zuiyah4qSHTY8ucymBjJxd/eDLWxqP9Z3Gqjwfova0JD/1ThJglQPaIDXdrv/EOTTIHrJZtd1fRmdbd5zom5QZa7O/BFpL/tAdqUD2DtrT20J7aop0WMwWCS3pgliJcuKq+jIgS20AWpE3KjN1ToxhOy95LKh/U8X29Wv2/BVRUI/75JQ+XAR1o+hz+SIAf8AgKeHx5Bn0QmGuAUM6GW/Nb/UUS2IgQguMMPJKZl4r9mxBRbBZM0ALUosOJawKMb/DZYfIueDC1Awik1frM05e+5TfMRIe7wtS5VrxxFG3SceEJll2JtXYGLhO7e3skhtBJTeJvI4gQctMUYXFtZsxULr6eeBCamlsIFs18k5Fom/XyPs6k4=",
   },
   {
     name: "Tony",
     fullName: "Tony Bianchini",
     image: "/images/Trainer Headshots/Tony Bianchini(2).png",
-    scheduleUrl: CALENDLY_URL,
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuig9NN/U9q7ES2zuiyah4qSHTY8ucymBjJxd/eDLWxqP9Z3Gqjwfova0JD/1ThJglQPaIDXdrv/EOTTIHrJZtd1fRmdbd5zom5QZa7O/BFpL/tAdqUD2DtrT20J7aop0WMwWCS3pgliJcuKq+jIgS20AWpE3KjN1ToxhOy95LKh/U8X29Wv2/BVRUI/75JQ+XAR1o+hz+SIAf8AgKeHx5Bn0QmGuAUM6GW/Nb/UUS2IgQguMMPJKZl4r9mxBRbBZM2oA2cqU+Md0jprr1L4Yqdl4N3BQxifWJRPLUp0yvsNFwFY/l2Awg7DGhn1A43tHYGx2caziw9XYjBlwhLEcoFhhjZdaSoRlwU61l1eo0kMIVM9tspvvJpwPg+RFVjqdsQ=",
   },
   {
-    name: "Will",
-    fullName: "Will Albritton",
-    image: "/images/Trainer Headshots/Will Albritton .png",
-    scheduleUrl: CALENDLY_URL,
+    name: "Joey",
+    fullName: "Joey",
+    image: "/images/Trainer Headshots/joel-headshot.webp",
+    scheduleUrl: "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuig9NN/U9q7ES2zuiyah4qSHTY8ucymBjJxd/eDLWxqP9Z3Gqjwfova0JD/1ThJglQPaIDXdrv/EOTTIHrJZtd1fRmdbd5zom5QZa7O/BFpL/tAdqUD2DtrT20J7aop0WMwWCS3pgliJcuKq+jIgS20AWpE3KjN1ToxhOy95LKh/U8X29Wv2/BVRUI/75JQ+XAR1o+hz+SIAf8AgKeHx5Bn0QmGuAUM6GW/Nb/UUS2IgQguMMPJKZl4r9mxBRbBZM3sLtLXI+HVcJbuQSemjJ23rg8p9BYsn97W1P/Z3c1evTaF+arHNxxqYxBAPQf3L5/xdVDJi1oRxvUrEmWFuiPK",
   },
 ];
 
