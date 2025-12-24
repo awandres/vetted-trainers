@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ArrowRight, Video, Dumbbell, Home } from "lucide-react";
+import { ArrowRight, Video, Dumbbell, Scale } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Vetted Trainers offers private gym, in-home, and virtual personal training services in Frederick, Maryland. Train at our exclusive facility or let us bring the workout to you.",
+  description: "Vetted Trainers offers private gym, weight loss, and virtual personal training services in Frederick, Maryland. Train at our exclusive facility or transform your body with our programs.",
   openGraph: {
     title: "Personal Training Services | Vetted Trainers",
-    description: "Private gym, in-home, and virtual personal training in Frederick, MD. Expert trainers dedicated to your success.",
+    description: "Private gym, weight loss, and virtual personal training in Frederick, MD. Expert trainers dedicated to your success.",
     url: "https://www.vettedtrainers.com/services/",
   },
 };
 
 const CALENDLY_URL = "https://calendly.com/vetted-health/vetted-trainers-disco";
 
-// Services ordered: Private Gym first, In-Home second, Virtual last
+// Services ordered: Private Gym first, Weight Loss second, Virtual last
 const services = [
   {
     id: "PersonalTraining",
@@ -33,19 +33,19 @@ const services = [
     ],
   },
   {
-    id: "InHomeTraining",
-    icon: Home,
-    title: "In-Home Personal Training",
-    shortDescription: "The gym comes to you",
-    fullDescription: "Embrace fitness with Vetted Trainers' unique In-Home Personal Training service in Frederick, Maryland. Our approach begins with a fascial release massage to prepare your body for a dynamic, equipment-free workout. Let Vetted Trainers bring the gym to you, ensuring your fitness journey is convenient, impactful, and tailored to your lifestyle.",
+    id: "WeightLoss",
+    icon: Scale,
+    title: "Weight Loss Programs",
+    shortDescription: "Transform your body sustainably",
+    fullDescription: "Transform your body with Vetted Trainers' comprehensive Weight Loss Programs in Frederick, Maryland. Our approach combines personalized nutrition guidance, tissue work, and strategic workouts designed for sustainable fat loss. Let Vetted Trainers guide you through a proven system that delivers lasting results tailored to your lifestyle and goals.",
     image: "/images/Personal Training Service/personal-training-2.JPG",
     cta: "I'M READY",
     features: [
-      "Train at your location",
-      "No equipment needed",
-      "Fascial release included",
-      "Flexible scheduling",
-      "Indoor or outdoor",
+      "Personalized nutrition guidance",
+      "Strategic fat-loss workouts",
+      "Tissue work included",
+      "Progress tracking",
+      "Sustainable results",
     ],
   },
   {

@@ -65,7 +65,7 @@ export default function JoinOurTeamPage() {
               We want to hear from you.
             </p>
             <a
-              href="mailto:info@vettedhealth.org?subject=Joining%20the%20Vetted%20Trainers%20Team"
+              href="mailto:Tony@vettedtrainers.com?subject=Joining%20the%20Vetted%20Trainers%20Team"
               className="inline-flex items-center gap-2 bg-[#50BFF4] hover:bg-[#3DAEE3] text-black px-8 py-4 rounded-full font-bold text-lg transition-all hover:shadow-lg hover:shadow-[#50BFF4]/30 hover:scale-105"
             >
               Apply Now
@@ -145,7 +145,7 @@ export default function JoinOurTeamPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:info@vettedhealth.org?subject=Joining%20the%20Vetted%20Trainers%20Team"
+              href="mailto:Tony@vettedtrainers.com?subject=Joining%20the%20Vetted%20Trainers%20Team"
               className="inline-flex items-center justify-center gap-2 bg-[#50BFF4] hover:bg-[#3DAEE3] text-black px-10 py-5 rounded-full font-bold text-lg transition-all hover:shadow-lg hover:shadow-[#50BFF4]/30 hover:scale-105"
             >
               Email Your Application
@@ -153,7 +153,7 @@ export default function JoinOurTeamPage() {
             </a>
           </div>
           <p className="text-gray-500 mt-6 text-sm">
-            Email us at <a href="mailto:info@vettedhealth.org" className="text-[#50BFF4] hover:underline">info@vettedhealth.org</a>
+            Email us at <a href="mailto:Tony@vettedtrainers.com" className="text-[#50BFF4] hover:underline">Tony@vettedtrainers.com</a>
           </p>
         </div>
       </section>

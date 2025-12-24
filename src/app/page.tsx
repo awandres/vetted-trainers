@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Dumbbell, Home, Video, ChevronRight } from "lucide-react";
+import { ArrowRight, Dumbbell, Scale, Video, ChevronRight } from "lucide-react";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { GoogleReviews } from "@/components/GoogleReviews";
 
 const CALENDLY_URL = "https://calendly.com/vetted-health/vetted-trainers-disco";
 
-// Services ordered: Private Gym first, In-Home second, Virtual last
+// Services ordered: Private Gym first, Weight Loss second, Virtual last
 const services = [
   {
     icon: Dumbbell,
@@ -16,9 +16,9 @@ const services = [
     cta: "BOOK NOW",
   },
   {
-    icon: Home,
-    title: "In-Home Personal Training",
-    description: "Get fit with Vetted Trainers' In-Home Personal Training in Frederick, Maryland. We bring tissue work and dynamic, equipment-free workouts to your location.",
+    icon: Scale,
+    title: "Weight Loss Programs",
+    description: "Transform your body with Vetted Trainers' Weight Loss Programs in Frederick, Maryland. We combine nutrition guidance, tissue work, and personalized workouts designed for sustainable results.",
     image: "/images/Personal Training Service/personal-training-2.JPG",
     cta: "SCHEDULE",
   },
@@ -32,8 +32,8 @@ const services = [
 ];
 
 const stats = [
-  { value: "11+", label: "Years Experience" },
-  { value: "500+", label: "Clients Trained" },
+  { value: "15+", label: "Years Experience" },
+  { value: "1000+", label: "Clients Trained" },
   { value: "3", label: "Training Options" },
   { value: "100%", label: "Dedication" },
 ];
@@ -106,7 +106,7 @@ export default function HomePage() {
               Vetted Trainers is a team of top-notch trainers who combine the best of strength training, 
               mobility, and tissue work to optimize your human movement. Train at our private, 
               appointment-only gym in Frederick, MD, or let us bring the workout to you with 
-              in-home and virtual options.
+              weight loss programs and virtual options.
             </p>
           </div>
 
@@ -129,9 +129,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 bg-[#50BFF4] mx-auto mb-8" />
             <p className="text-lg text-gray-400 max-w-4xl mx-auto leading-relaxed">
-              At Vetted Trainers, our mission is to ignite a global revolution of health and well-being 
-              through comprehensive movement and nutrition education which will empower individuals 
-              to reclaim their lives and create lasting change.
+              At Vetted Trainers, our mission is to deliver unparalleled personal training, providing our elite members with a bespoke, top-tier fitness experience.
             </p>
           </div>
         </div>

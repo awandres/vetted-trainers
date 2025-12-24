@@ -100,10 +100,11 @@ export async function GET(request: Request) {
       "carol tressler"
     ];
 
-    // Filter out inappropriate names and low ratings
+    // Filter out inappropriate names, employees, and low ratings
     const validReviews = data.result.reviews
       ?.filter((review) => review.rating >= 4)
-      ?.filter((review) => !review.author_name.toLowerCase().includes("nutz")) || [];
+      ?.filter((review) => !review.author_name.toLowerCase().includes("nutz"))
+      ?.filter((review) => !review.author_name.toLowerCase().includes("joey bomango")) || [];
 
     // Sort preferred reviewers in the exact order specified, then add others
     const preferredReviews = preferredReviewers
@@ -139,3 +140,4 @@ export async function GET(request: Request) {
     );
   }
 }
+

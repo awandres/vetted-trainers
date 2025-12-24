@@ -26,7 +26,7 @@ const socialLinks = [
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services/", label: "Services" },
-  { href: "/maestros/", label: "Maestros" },
+  { href: "/personal-trainers/", label: "Personal Trainers" },
   { href: "/about/", label: "About" },
   { href: "/join-our-team/", label: "Join Our Team" },
 ];
@@ -131,11 +131,11 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@vettedhealth.org"
+                  href="mailto:Tony@vettedtrainers.com"
                   className="flex items-center gap-3 text-gray-400 hover:text-[#50BFF4] transition-colors"
                 >
                   <Mail className="h-5 w-5 flex-shrink-0" />
-                  <span>info@vettedhealth.org</span>
+                  <span>Tony@vettedtrainers.com</span>
                 </a>
               </li>
               <li>

@@ -21,24 +21,24 @@ const leadership = [
     name: "Joel Arias",
     title: "Founder of Vetted Trainers",
     image: "/images/Trainer Headshots/joel-headshot.webp",
-    bio: "Meet Joel Arias! Joel is at the helm as the fearless leader of Vetted Health, has designed all of the movement programs, and developed the movement ideology behind Vetted Health. Joel has always had a perspicacity into human movement, but a serious knee injury took him on a journey that led him to create a system to give people hope again. He was told that he would never have speed or power in his leg again and he would not accept this. He created a system to heal his knee and now he and his team go after any movement issues that keep you from pursuing your best life!",
+    bio: "Meet Joel Arias! Joel is at the helm as the fearless leader of Vetted Trainers, has designed all of the movement programs, and developed the movement ideology behind Vetted Trainers. Joel has always had a perspicacity into human movement, but a serious knee injury took him on a journey that led him to create a system to give people hope again. He was told that he would never have speed or power in his leg again and he would not accept this. He created a system to heal his knee and now he and his team go after any movement issues that keep you from pursuing your best life!",
   },
   {
     name: "Tony Bianchini",
     title: "Director of Member Journeys",
     image: "/images/Trainer Headshots/Tony Bianchini(2).png",
-    bio: "Tony's role is completely unique and born from the idea that our Members come first. He makes sure that you are placed with the Maestro that suits your needs best and will also be following up with you to make sure that your health needs are being met in a stellar fashion! If you would like to be a Vetted Member, speaking with Tony is the first step.",
+    bio: "Tony's role is completely unique and born from the idea that our Members come first. He makes sure that you are placed with the Personal Trainer that suits your needs best and will also be following up with you to make sure that your health needs are being met in a stellar fashion! If you would like to be a Vetted Member, speaking with Tony is the first step.",
     scheduleUrl: "https://calendly.com/vetted-health/vetted-health-disco",
   },
   {
     name: "Joey Bomango",
-    title: "Director of Pain Amelioration",
-    image: "/images/OTT_VT3.jpg",
-    bio: "Joey has been working by Joel's side from the beginning and has the greatest depth of knowledge of biomechanics on the team. Joey will evaluate your musculoskeletal system in your first session so that you understand the root of your pain. He will then design a movement program for you that will lead to physical victory with the most rapidity. Tony then takes this information and finds the perfect Movement Maestro to guide you through your journey!",
+    title: "Director of Training",
+    image: "/images/Trainer Headshots/Joey Bomango.png",
+    bio: "Joey has been working by Joel's side from the beginning and has the greatest depth of knowledge of biomechanics on the team. Joey will evaluate your musculoskeletal system in your first session so that you understand the root of your pain. He will then design a movement program for you that will lead to physical victory with the most rapidity. Tony then takes this information and finds the perfect Personal Trainer to guide you through your journey!",
   },
 ];
 
-// Team members (Maestros) - 11 members so the 12th slot is the CTA card
+// Team members (Personal Trainers)
 const teamMembers = [
   { name: "Jose", fullName: "Jose Recio", image: "/images/Trainer Headshots/Jose Recio Headshot.png" },
   { name: "Kade", fullName: "Kade Arrington", image: "/images/Trainer Headshots/Kade Arrington(1).png" },
@@ -49,7 +49,8 @@ const teamMembers = [
   { name: "Ben", fullName: "Ben Sicat", image: "/images/Trainer Headshots/Ben Sicat headshot.png" },
   { name: "Nick", fullName: "Nick Rispoli", image: "/images/Trainer Headshots/Nick Rispoli Headshot.png" },
   { name: "Jae", fullName: "Jaelyn Blanc", image: "/images/Trainer Headshots/Jaelyn Blanc headshot.png" },
-  { name: "Luke", fullName: "Luke Boyd", image: "/images/Trainer Headshots/Luke Boyds headshot.png" },
+  { name: "Matthew", fullName: "Matthew Albano", image: "/images/Trainer Headshots/Matt-Albano.webp" },
+  { name: "Luke", fullName: "Luke Boyds", image: "/images/Trainer Headshots/Luke Boyds headshot.png" },
   { name: "Will", fullName: "Will Albritton", image: "/images/Trainer Headshots/Will Albritton .png" },
 ];
 
@@ -128,7 +129,7 @@ export default function AboutPage() {
             </h2>
             <div className="w-24 h-1 bg-[#50BFF4] mx-auto mb-6" />
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Our Movement Maestros are expert trainers ready to guide you on your fitness journey.
+              Our Personal Trainers are ready to guide you on your fitness journey.
             </p>
           </div>
 
@@ -151,16 +152,16 @@ export default function AboutPage() {
                 </div>
               </div>
             ))}
+          </div>
 
-            {/* View All Maestros CTA Card - takes the place of the 12th card */}
+          {/* View All Personal Trainers Link */}
+          <div className="text-center mt-12">
             <Link
-              href="/maestros/"
-              className="relative aspect-square rounded-2xl overflow-hidden bg-[#252525] flex flex-col items-center justify-center text-center p-6 hover:bg-[#1f1f1f] transition-colors group"
+              href="/personal-trainers/"
+              className="inline-flex items-center gap-2 text-[#50BFF4] hover:text-white font-bold text-lg transition-colors group"
             >
-              <span className="text-lg font-bold text-[#50BFF4] group-hover:text-white transition-colors leading-tight flex items-center gap-2">
-                View All Maestros & Schedule
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </span>
+              View All Trainers & Schedule
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>

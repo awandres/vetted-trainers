@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     default: "Vetted Trainers | Personal Training in Frederick, MD",
     template: "%s | Vetted Trainers",
   },
-  description: "Vetted Trainers offers personal training services in Frederick, Maryland. Private gym, in-home, and virtual training options. Transform your fitness with our expert team.",
+  description: "Vetted Trainers offers personal training services in Frederick, Maryland. Private gym, weight loss, and virtual training options. Transform your fitness with our expert team.",
   keywords: [
     "personal trainer Frederick MD",
     "personal training Frederick Maryland",
     "private gym training",
-    "in-home personal trainer",
+    "weight loss programs",
     "virtual personal training",
     "fitness trainer Frederick",
     "strength training Maryland",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     url: "https://www.vettedtrainers.com",
     siteName: "Vetted Trainers",
     title: "Vetted Trainers | Personal Training in Frederick, MD",
-    description: "Transform your fitness with Vetted Trainers. Private gym, in-home, and virtual personal training in Frederick, Maryland.",
+    description: "Transform your fitness with Vetted Trainers. Private gym, weight loss, and virtual personal training in Frederick, Maryland.",
     images: [
       {
         url: "/images/get-to-work.jpg",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Vetted Trainers | Personal Training in Frederick, MD",
-    description: "Transform your fitness with Vetted Trainers. Private gym, in-home, and virtual personal training in Frederick, Maryland.",
+    description: "Transform your fitness with Vetted Trainers. Private gym, weight loss, and virtual personal training in Frederick, Maryland.",
     images: ["/images/get-to-work.jpg"],
   },
   robots: {
@@ -80,10 +80,10 @@ const jsonLd = {
   "@type": "LocalBusiness",
   "@id": "https://www.vettedtrainers.com",
   name: "Vetted Trainers",
-  description: "Personal training services in Frederick, Maryland. Private gym, in-home, and virtual training options.",
+  description: "Personal training services in Frederick, Maryland. Private gym, weight loss, and virtual training options.",
   url: "https://www.vettedtrainers.com",
   telephone: "+1-240-397-0240",
-  email: "info@vettedhealth.org",
+  email: "Tony@vettedtrainers.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "5712 Industry Lane Unit E",
@@ -135,7 +135,7 @@ const jsonLd = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "In-Home Personal Training",
+          name: "Weight Loss Programs",
           description: "Personal training at your location in Frederick, Maryland.",
         },
       },
