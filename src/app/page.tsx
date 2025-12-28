@@ -87,11 +87,11 @@ export default function HomePage() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <div className="w-8 h-12 rounded-full border-2 border-white/30 flex items-start justify-center p-2">
             <div className="w-1 h-3 bg-white/60 rounded-full animate-pulse" />
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* What is Vetted Trainers Section */}
@@ -213,10 +213,10 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6">
-                Vetted <span className="text-[#50BFF4]">Nutrition</span>
+                Weight Loss <span className="text-[#50BFF4]">Journey</span>
               </h2>
               <blockquote className="text-xl text-gray-300 italic mb-8 border-l-4 border-[#50BFF4] pl-6">
-                &ldquo;Vetted Nutrition Philosophy: We teach people to feed their body and good bacteria 
+                &ldquo;Our Philosophy: We teach people to feed their body and good bacteria 
                 in a sustainable way that promotes a healthy gut which promotes fat loss and lean muscle growth.&rdquo;
               </blockquote>
               <a

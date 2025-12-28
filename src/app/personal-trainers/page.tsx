@@ -80,7 +80,7 @@ const trainers = [
     name: "Luke",
     fullName: "Luke Boyds",
     image: "/images/Trainer Headshots/Luke Boyds headshot.png",
-    scheduleUrl: "",
+    scheduleUrl: "https://www.vagaro.com/Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpuj/K+Z/UQKQ2fQOg7AOqLyJAhQsH7lTOlG0MVq8uh7ANo+bNhTUy8aViLcDgc4ZzPEGCfs6CVYzn0Kmb3QALwVTL4Y2VmXGjy4Age/+XKLB5oSeFn0mOtM08/CE+XjEwKX82hTaBxsoiiEFx0P1wbZr5OCuD3ej05Tgqc5vpv550m+TH66XmUYW7jSmDLDvOkwv3h27cjasbtBvujPgu7kyQ4LmDRbcKkd4aMRySfMvoi9fobQCabovnWt89qV9oWYxBrYXxoBrfPln0ImLSwYBJQ4esH5B1eEQKBP7tkDI+itFsGEulm961c3cUvDNjeTGoAFyMk9NPP8akfr5LMkmi7rR/NzVdJzPG4nBjxayZt5tojc7qHDajxzHcCrpMSPYOMmAZqjzx4ZH9xbdJ/2vSVCM2Hc/2RpSGQbAk8svAChXRvhFHJKGXosEYsQywr8=",
   },
   {
     name: "Tony",
@@ -92,7 +92,7 @@ const trainers = [
     name: "Will",
     fullName: "Will Albritton",
     image: "/images/Trainer Headshots/Will Albritton .png",
-    scheduleUrl: "",
+    scheduleUrl: "https://www.vagaro.com/Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVM8aISXrVEkD6q0xWndNiYdw+xDBf2yDI40daks50PAgHg5F4ntHvq0svMvstd72gmk9pGgmm6VQlIwTBdBCpujW/qE//U1E4jOc7j8U/G3G7ZDAG93d/90M/2+t17WFJY8nFZb2Jjj8nPmksaxxhPNRGdDqe0IBBmed3YLfHnu79PLSZG4hrkDMvJu8RyEfOz6dOCM9owtCsMF2M+14aJ2cAI+ivEU4+uLLT9UxjJgp8hiZObL/jNe15muF2dH5StBqYy+IWedl0xWH6ZpBGHTEihsqAUrDAGB7d5jZ/WKDt/Yh+35aUXwMrPgUkO8vg4npLbSzZdrWm4tSnbzvGFaXsOtKPnB+4cnRn/myDAGMOn3tYSzfBxe8gh4J5pGFKbPmEZ/1wvwrwKeMLv4umFnUTE02rhaJeU0LtpbiglJQh5EN1TeeSusYIaMAUwhyh47TAXrTPxrfSeohEewR+qzA7f+5kgPA/X6Qn17SBje+oK1UNP2DuDrF2GbO5CSxGA==",
   },
   {
     name: "Joey",
@@ -121,16 +121,15 @@ export default function PersonalTrainersPage() {
         </div>
       </section>
 
-      {/* Video Section */}
+      {/* Team Photo Section */}
       <section className="py-12 bg-[#252525]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
-            <iframe
-              src="https://www.youtube.com/embed/hE06nPdwIpM"
-              title="The greatest group of men ever assembled - Vetted Trainers"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="absolute inset-0 w-full h-full"
+            <Image
+              src="/images/Trainer Headshots/Team Photo.jpeg"
+              alt="The Vetted Trainers team"
+              fill
+              className="object-cover"
             />
           </div>
         </div>
@@ -161,9 +160,18 @@ export default function PersonalTrainersPage() {
           </div>
 
           {/* Row 4 - 3 trainers */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             {trainers.slice(9, 12).map((trainer) => (
               <TrainerCard key={trainer.name} trainer={trainer} />
+            ))}
+          </div>
+
+          {/* Row 5 - remaining trainers (centered) */}
+          <div className="flex flex-wrap justify-center gap-8">
+            {trainers.slice(12).map((trainer) => (
+              <div key={trainer.name} className="w-full md:w-[calc(33.333%-1.5rem)]">
+                <TrainerCard trainer={trainer} />
+              </div>
             ))}
           </div>
         </div>
