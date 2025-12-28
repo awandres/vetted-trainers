@@ -254,7 +254,7 @@ export default function ServicesPage() {
             Not Sure Which Service Is Right For You?
           </h2>
           <p className="text-xl text-gray-400 mb-10">
-            Schedule a free consultation and we&apos;ll help you find the perfect training option 
+            Schedule a complimentary consultation and we&apos;ll help you find the perfect training option 
             for your goals, schedule, and lifestyle.
           </p>
           <a
@@ -263,7 +263,7 @@ export default function ServicesPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#50BFF4] hover:bg-[#3DAEE3] text-black px-10 py-5 rounded-full font-bold text-lg transition-all hover:shadow-lg hover:shadow-[#50BFF4]/30 hover:scale-105"
           >
-            Request Free Consultation
+            Request Complimentary Consultation
             <ArrowRight className="h-5 w-5" />
           </a>
         </div>
