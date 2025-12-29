@@ -70,7 +70,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/Building images/gym-room.JPG"
@@ -80,7 +80,7 @@ export default function ServicesPage() {
           />
           <div className="absolute inset-0 bg-[#181818]/85" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6">
               Our <span className="text-[#50BFF4]">Services</span>
@@ -114,26 +114,6 @@ export default function ServicesPage() {
                 <p className="text-gray-400 text-sm">{service.shortDescription}</p>
               </a>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Always Learning Video Section */}
-      <section className="py-16 bg-[#181818]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-black text-white mb-4">
-              At Vetted, we are <span className="text-[#50BFF4]">always learning...</span>
-            </h2>
-          </div>
-          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
-            <iframe
-              src="https://www.youtube.com/embed/8Dd34IR_Otw"
-              title="At Vetted, we are always learning..."
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="absolute inset-0 w-full h-full"
-            />
           </div>
         </div>
       </section>
