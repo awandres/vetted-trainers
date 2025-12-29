@@ -71,29 +71,29 @@ export function TestimonialCarousel() {
         <div className="flex justify-center gap-4 mt-8">
           <button
             onClick={prev}
-            className="p-3 rounded-full bg-[#252525] hover:bg-[#50BFF4] text-white hover:text-black transition-colors"
+            className="p-4 rounded-full bg-[#252525] hover:bg-[#50BFF4] text-white hover:text-black transition-colors"
             aria-label="Previous testimonial"
           >
-            <ChevronLeft className="h-5 w-5" />
+            <ChevronLeft className="h-6 w-6" />
           </button>
           <button
             onClick={next}
-            className="p-3 rounded-full bg-[#252525] hover:bg-[#50BFF4] text-white hover:text-black transition-colors"
+            className="p-4 rounded-full bg-[#252525] hover:bg-[#50BFF4] text-white hover:text-black transition-colors"
             aria-label="Next testimonial"
           >
-            <ChevronRight className="h-5 w-5" />
+            <ChevronRight className="h-6 w-6" />
           </button>
         </div>
 
         {/* Dots */}
-        <div className="flex justify-center gap-2 mt-6">
+        <div className="flex justify-center gap-3 mt-6">
           {testimonials.map((_, i) => (
             <button
               key={i}
               onClick={() => goTo(i)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 i === activeIndex 
-                  ? "bg-[#50BFF4] w-6" 
+                  ? "bg-[#50BFF4] w-8" 
                   : "bg-gray-600 hover:bg-gray-500"
               }`}
               aria-label={`Go to testimonial ${i + 1}`}

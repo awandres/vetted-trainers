@@ -107,6 +107,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[#50BFF4] transition-colors"
+                  aria-label="Visit Vetted Nutrition website (opens in new tab)"
                 >
                   Vetted Nutrition
                 </a>
@@ -156,10 +157,10 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-400 text-sm">
               © {currentYear} Vetted Trainers. All rights reserved.
             </p>
-            <p className="text-gray-600 text-xs">
+            <p className="text-gray-400 text-xs">
               Frederick, Maryland&apos;s Premier Personal Training
             </p>
           </div>
