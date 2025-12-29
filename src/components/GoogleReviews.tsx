@@ -63,7 +63,7 @@ function ReviewCard({ review }: { review: Review }) {
       <div className="mt-4">
         <p className="font-medium text-white">— {review.author_name}</p>
         {review.relative_time_description && (
-          <p className="text-sm text-gray-500">{review.relative_time_description}</p>
+          <p className="text-sm text-gray-400">{review.relative_time_description}</p>
         )}
       </div>
     </div>
@@ -126,7 +126,7 @@ export function GoogleReviews() {
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
         <div className="flex items-center gap-2">
           <img
-            src="https://www.google.com/favicon.ico"
+            src="/images/google-g-icon.ico"
             alt="Google"
             className="w-6 h-6"
           />
@@ -171,7 +171,7 @@ export function GoogleReviews() {
       </div>
 
       {/* Google Attribution */}
-      <p className="text-center text-gray-600 text-xs">
+      <p className="text-center text-gray-400 text-xs">
         Reviews powered by Google
         {data?.source === "fallback" && " (cached)"}
       </p>

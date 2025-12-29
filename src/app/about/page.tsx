@@ -161,7 +161,7 @@ export default function AboutPage() {
               className="inline-flex items-center gap-2 text-[#50BFF4] hover:text-white font-bold text-lg transition-colors group"
             >
               View All Trainers & Schedule
-              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
