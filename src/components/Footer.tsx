@@ -101,17 +101,7 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <a
-                  href="https://www.vettednutrition.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-[#50BFF4] transition-colors"
-                  aria-label="Visit Vetted Nutrition website (opens in new tab)"
-                >
-                  Vetted Nutrition
-                </a>
-              </li>
+
             </ul>
           </div>
 
