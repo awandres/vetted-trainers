@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     description: "Transform your fitness with Vetted Trainers. Private gym, weight loss, and virtual personal training in Frederick, Maryland.",
     images: [
       {
-        url: "/images/vetted-logo.png",
+        url: "/images/VT Logos/VT_Logo_black(2).png",
         width: 512,
         height: 512,
         alt: "Vetted Trainers Logo",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Vetted Trainers | Personal Training in Frederick, MD",
     description: "Transform your fitness with Vetted Trainers. Private gym, weight loss, and virtual personal training in Frederick, Maryland.",
-    images: ["/images/vetted-logo.png"],
+    images: ["/images/VT Logos/VT_Logo_black(2).png"],
   },
   robots: {
     index: true,
@@ -98,7 +98,7 @@ const jsonLd = {
     latitude: 39.3876,
     longitude: -77.4208,
   },
-  image: "https://www.vettedtrainers.com/images/vetted-logo.png",
+  image: "https://www.vettedtrainers.com/images/VT Logos/VT_Logo_black(2).png",
   priceRange: "$$",
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
@@ -173,9 +173,11 @@ export default function RootLayout({
         `}
       </Script>
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/vt-favicon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/vt-favicon.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/vetted-logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/vt-favicon.png" />
         <link rel="canonical" href="https://www.vettedtrainers.com" />
         <meta name="theme-color" content="#50BFF4" />
         <script

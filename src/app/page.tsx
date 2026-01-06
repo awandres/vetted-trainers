@@ -224,10 +224,9 @@ export default function HomePage() {
                 href="https://calendly.com/vetted-health/weightloss-program-discovery-call"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Schedule a weight loss program discovery call"
                 className="inline-flex items-center gap-2 bg-[#50BFF4] hover:bg-[#3DAEE3] text-black px-8 py-4 rounded-full font-bold transition-all hover:shadow-lg"
               >
-                Learn More
+                Weight Loss Consultation
                 <ArrowRight className="h-5 w-5" />
               </a>
             </div>
