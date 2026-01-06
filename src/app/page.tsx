@@ -51,6 +51,7 @@ export default function HomePage() {
             fill
             className="object-cover object-center"
             priority
+            fetchPriority="high"
             quality={85}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#181818]/70 via-[#181818]/50 to-[#181818]" />
@@ -223,6 +224,7 @@ export default function HomePage() {
                 href="https://calendly.com/vetted-health/weightloss-program-discovery-call"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Schedule a weight loss program discovery call"
                 className="inline-flex items-center gap-2 bg-[#50BFF4] hover:bg-[#3DAEE3] text-black px-8 py-4 rounded-full font-bold transition-all hover:shadow-lg"
               >
                 Learn More

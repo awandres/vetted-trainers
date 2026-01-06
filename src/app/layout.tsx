@@ -45,18 +45,18 @@ export const metadata: Metadata = {
     description: "Transform your fitness with Vetted Trainers. Private gym, weight loss, and virtual personal training in Frederick, Maryland.",
     images: [
       {
-        url: "/images/get-to-work.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Vetted Trainers - Personal Training in Frederick, MD",
+        url: "/images/vetted-logo.png",
+        width: 512,
+        height: 512,
+        alt: "Vetted Trainers Logo",
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Vetted Trainers | Personal Training in Frederick, MD",
     description: "Transform your fitness with Vetted Trainers. Private gym, weight loss, and virtual personal training in Frederick, Maryland.",
-    images: ["/images/get-to-work.jpg"],
+    images: ["/images/vetted-logo.png"],
   },
   robots: {
     index: true,
@@ -173,9 +173,11 @@ export default function RootLayout({
         `}
       </Script>
       <head>
-        <link rel="icon" href="/images/vt-favicon.png" />
-        <link rel="apple-touch-icon" href="/images/vt-favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/vt-favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/vt-favicon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/vetted-logo.png" />
         <link rel="canonical" href="https://www.vettedtrainers.com" />
+        <meta name="theme-color" content="#50BFF4" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
