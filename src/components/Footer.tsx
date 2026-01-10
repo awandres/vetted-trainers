@@ -1,14 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Mail, Phone, Facebook, Youtube, Instagram } from "lucide-react";
+import { MapPin, Mail, Phone, Youtube, Instagram } from "lucide-react";
 
 const socialLinks = [
-  {
-    href: "https://www.facebook.com/Vettedtrainers/",
-    icon: Facebook,
-    label: "Facebook",
-    hoverColor: "hover:bg-blue-600",
-  },
   {
     href: "https://www.youtube.com/channel/UCMTekJJglOmXvy3AZGjbQYw",
     icon: Youtube,
