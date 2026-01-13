@@ -32,7 +32,7 @@ const services = [
 ];
 
 const stats = [
-  { value: "15+", label: "Years Experience" },
+  { value: "16+", label: "Years Experience" },
   { value: "1000+", label: "Clients Trained" },
   { value: "3", label: "Training Options" },
   { value: "100%", label: "Dedication" },
@@ -51,7 +51,6 @@ export default function HomePage() {
             fill
             className="object-cover object-center"
             priority
-            fetchPriority="high"
             quality={85}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#181818]/70 via-[#181818]/50 to-[#181818]" />
@@ -226,7 +225,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#50BFF4] hover:bg-[#3DAEE3] text-black px-8 py-4 rounded-full font-bold transition-all hover:shadow-lg"
               >
-                Weight Loss Consultation
+                Learn More
                 <ArrowRight className="h-5 w-5" />
               </a>
             </div>
