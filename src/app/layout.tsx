@@ -175,9 +175,6 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/vt-favicon.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/vt-favicon.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/vt-favicon.png" />
         <link rel="canonical" href="https://www.vettedtrainers.com" />
         <meta name="theme-color" content="#50BFF4" />
         <script
